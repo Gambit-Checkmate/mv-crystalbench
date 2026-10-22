@@ -27,6 +27,8 @@ configs:
 
 # MV-CrystalBench
 
+[GitHub repository and evaluation results](https://github.com/Gambit-Checkmate/mv-crystalbench) · [Hugging Face dataset](https://huggingface.co/datasets/chessnash01/mv-crystalbench)
+
 MV-CrystalBench is an English, four-option visual question-answering benchmark
 for spatial reasoning about idealized crystal structures. It contains
 **{{FULL_COUNT}} questions over {{BASE_COUNT}} base structures**, plus a
@@ -134,9 +136,9 @@ with Image.open(root / "images" / row["image_paths"][0]) as image:
     first_image = image.convert("RGB")
 ```
 
-After uploading this folder to a dataset repository, its `full` and `mini`
-configs can be selected by name with `load_dataset(repo_id, name="mini",
-split="test")`. No hosted repository or DOI is claimed by this local package.
+The published repository is `chessnash01/mv-crystalbench`. Its `full` and `mini`
+configs can be selected by name with `load_dataset("chessnash01/mv-crystalbench",
+name="mini", split="test")`. No dataset DOI has been assigned.
 Download the image files as well as the JSONL; the dataset loader does not
 automatically fetch and decode images referenced by these relative strings.
 Hugging Face's loading pipeline may insert nulls for optional metadata fields
@@ -261,13 +263,14 @@ license, NOTICE, selection manifest, and prototype bibliographies are under
 The compact package does not include the source CIFs; see `provenance/README.md`.
 Benchmark bond policies and question annotations are project additions.
 
-Suggested citation without an invented DOI or repository address:
+Suggested citation:
 
 ```bibtex
 @misc{mvcrystalbench2026,
   title = {MV-CrystalBench: Multi-view Crystal Spatial Reasoning Benchmark},
   author = {{MV-CrystalBench contributors}},
   year = {2026},
+  url = {https://huggingface.co/datasets/chessnash01/mv-crystalbench},
   note = {716-question full set and 200-question mini subset; local release dated 2026-10-22}
 }
 ```

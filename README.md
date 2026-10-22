@@ -1,5 +1,9 @@
 # MV-CrystalBench
 
+[GitHub repository](https://github.com/Gambit-Checkmate/mv-crystalbench) · [Hugging Face dataset](https://huggingface.co/datasets/chessnash01/mv-crystalbench)
+
+[![Hugging Face Dataset](https://img.shields.io/badge/Hugging%20Face-Dataset-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/chessnash01/mv-crystalbench)
+
 **A multi-view crystal spatial-reasoning benchmark with programmatically verified answers.**
 
 MV-CrystalBench tests whether vision-language models can count atoms, compare distances, identify coordination environments, and recognize the same periodic structure across different views. It contains **48 crystal structures across six crystal systems, 716 four-choice questions, and a balanced 200-question mini evaluation**. Structure generation, rendering, answer verification, and scoring run locally with ASE, spglib, NumPy, and matplotlib; no GUI or pymatgen is required.
@@ -101,7 +105,7 @@ hf_dataset/
     scenes/<scene_id>/...  # 1,507 PNGs referenced by the released questions
 ```
 
-Resolve each row's `image_paths` relative to **`hf_dataset/images`**, not `hf_dataset` itself. This compact package includes question-referenced images only. It **does not include every eight-view candidate or visibility metadata**, so it supports the released questions but cannot directly support view ablation. Regenerate complete scenes locally for that experiment. No hosted dataset URL or DOI is claimed here.
+Resolve each row's `image_paths` relative to **`hf_dataset/images`**, not `hf_dataset` itself. This compact package includes question-referenced images only. It **does not include every eight-view candidate or visibility metadata**, so it supports the released questions but cannot directly support view ablation. Regenerate complete scenes locally for that experiment. The package is hosted on [Hugging Face](https://huggingface.co/datasets/chessnash01/mv-crystalbench); it is excluded from Git. No dataset DOI has been assigned.
 
 ## Reproduce
 
@@ -123,6 +127,13 @@ python structures.py
 The last command prints a spglib space-group self-check for each structure; it does not render or call an API.
 
 ### 2. Check the released questions without an API
+
+Download the public dataset package separately from the code repository:
+
+```bash
+python -m pip install huggingface_hub
+python -c "from huggingface_hub import snapshot_download; snapshot_download('chessnash01/mv-crystalbench', repo_type='dataset', local_dir='hf_dataset')"
+```
 
 With the local release package present:
 
@@ -247,8 +258,9 @@ If you use this benchmark, please cite:
   author = {{MV-CrystalBench contributors}},
   title = {{MV-CrystalBench}: A Multi-View Crystal Spatial-Reasoning Benchmark},
   year = {2026},
+  url = {https://github.com/Gambit-Checkmate/mv-crystalbench},
   note = {OSI Hackathon benchmark and software}
 }
 ```
 
-There is no assigned paper DOI or claimed publication URL in this release.
+No paper DOI has been assigned to this release.
