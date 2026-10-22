@@ -1,0 +1,447 @@
+{
+  "total_questions": 200,
+  "by_qtype": {
+    "Q1a": 25,
+    "Q1b": 25,
+    "Q2": 50,
+    "Q3": 25,
+    "Q4": 25,
+    "Q5": 25,
+    "Q6": 25
+  },
+  "q2_difficulties": {
+    "easy": 25,
+    "hard": 25
+  },
+  "answer_letters": {
+    "A": 54,
+    "B": 49,
+    "C": 45,
+    "D": 52
+  },
+  "answer_letters_by_qtype": {
+    "Q1a": {
+      "A": 7,
+      "B": 6,
+      "C": 6,
+      "D": 6
+    },
+    "Q1b": {
+      "A": 8,
+      "B": 6,
+      "C": 3,
+      "D": 8
+    },
+    "Q2": {
+      "A": 12,
+      "B": 13,
+      "C": 13,
+      "D": 12
+    },
+    "Q3": {
+      "A": 6,
+      "B": 6,
+      "C": 5,
+      "D": 8
+    },
+    "Q4": {
+      "A": 7,
+      "B": 4,
+      "C": 7,
+      "D": 7
+    },
+    "Q5": {
+      "A": 7,
+      "B": 8,
+      "C": 5,
+      "D": 5
+    },
+    "Q6": {
+      "A": 7,
+      "B": 6,
+      "C": 6,
+      "D": 6
+    }
+  },
+  "per_qtype": {
+    "Q1a": {
+      "count": 25,
+      "unique_base_structures": 25,
+      "max_questions_per_base": 1,
+      "base_structure_counts": {
+        "Ag2S_acanthite": 1,
+        "Al2O3_corundum": 1,
+        "AlB2": 1,
+        "BaTiO3_tetragonal": 1,
+        "CaCO3_calcite": 1,
+        "CsCl": 1,
+        "CuCl2_tolbachite": 1,
+        "Cu_fcc": 1,
+        "Fe3C_cementite": 1,
+        "FeS2_marcasite": 1,
+        "Fe_bcc": 1,
+        "Ga2O3_beta": 1,
+        "Mg2SiO4_forsterite": 1,
+        "MgAl2O4_spinel": 1,
+        "MoS2_2H": 1,
+        "NaCl": 1,
+        "NiTi_B19prime": 1,
+        "P_black": 1,
+        "PbCl2_cotunnite": 1,
+        "SiC_3C": 1,
+        "SiO2_alpha_quartz": 1,
+        "SiO2_coesite": 1,
+        "Si_diamond": 1,
+        "U_alpha": 1,
+        "ZnS_zincblende": 1
+      },
+      "answer_text_distribution": {
+        "1": 1,
+        "10": 1,
+        "12": 2,
+        "13": 1,
+        "14": 2,
+        "15": 1,
+        "16": 1,
+        "18": 1,
+        "19": 1,
+        "2": 2,
+        "22": 1,
+        "31": 1,
+        "4": 2,
+        "45": 1,
+        "5": 1,
+        "6": 2,
+        "8": 2,
+        "9": 2
+      },
+      "answer_letter_distribution": {
+        "A": 7,
+        "B": 6,
+        "C": 6,
+        "D": 6
+      }
+    },
+    "Q1b": {
+      "count": 25,
+      "unique_base_structures": 25,
+      "max_questions_per_base": 1,
+      "base_structure_counts": {
+        "Ag2S_acanthite": 1,
+        "Al2O3_corundum": 1,
+        "AlB2": 1,
+        "BaTiO3_tetragonal": 1,
+        "CaCO3_calcite": 1,
+        "CsCl": 1,
+        "CuCl2_tolbachite": 1,
+        "Cu_fcc": 1,
+        "Fe3C_cementite": 1,
+        "FeS2_marcasite": 1,
+        "Fe_bcc": 1,
+        "Ga2O3_beta": 1,
+        "Mg2SiO4_forsterite": 1,
+        "MgAl2O4_spinel": 1,
+        "MoS2_2H": 1,
+        "NaCl": 1,
+        "NiTi_B19prime": 1,
+        "P_black": 1,
+        "PbCl2_cotunnite": 1,
+        "SiC_3C": 1,
+        "SiO2_alpha_quartz": 1,
+        "SiO2_coesite": 1,
+        "Si_diamond": 1,
+        "U_alpha": 1,
+        "ZnS_zincblende": 1
+      },
+      "answer_text_distribution": {
+        "1": 1,
+        "12": 2,
+        "16": 1,
+        "18": 1,
+        "2": 5,
+        "3": 1,
+        "32": 1,
+        "4": 7,
+        "6": 2,
+        "8": 4
+      },
+      "answer_letter_distribution": {
+        "A": 8,
+        "B": 6,
+        "C": 3,
+        "D": 8
+      }
+    },
+    "Q2": {
+      "count": 50,
+      "unique_base_structures": 35,
+      "max_questions_per_base": 2,
+      "base_structure_counts": {
+        "Al2O3_corundum": 1,
+        "As2S3_orpiment": 2,
+        "As_A7": 2,
+        "BN_hexagonal": 1,
+        "C_diamond": 2,
+        "C_graphite": 1,
+        "CaCO3_aragonite": 2,
+        "CaCO3_calcite": 2,
+        "CaF2_fluorite": 2,
+        "CsCl": 2,
+        "CuCl2_tolbachite": 2,
+        "CuFeS2_chalcopyrite": 1,
+        "CuO_tenorite": 2,
+        "Cu_fcc": 2,
+        "Fe3C_cementite": 2,
+        "FeS2_marcasite": 1,
+        "FeS2_pyrite": 1,
+        "Fe_bcc": 1,
+        "Mg2SiO4_forsterite": 1,
+        "MgAl2O4_spinel": 1,
+        "Mg_hcp": 1,
+        "MoS2_2H": 1,
+        "NiAs": 1,
+        "P_black": 1,
+        "PbO_litharge": 1,
+        "Se_trigonal": 2,
+        "SiO2_alpha_quartz": 2,
+        "SiO2_coesite": 1,
+        "Si_diamond": 2,
+        "SnS_alpha": 1,
+        "SrTiO3_perovskite": 2,
+        "TiO2_rutile": 1,
+        "WC_hexagonal": 1,
+        "ZnS_wurtzite": 1,
+        "ZnS_zincblende": 1
+      },
+      "answer_text_distribution": {
+        "12": 3,
+        "2": 10,
+        "3": 11,
+        "4": 11,
+        "6": 10,
+        "8": 5
+      },
+      "answer_letter_distribution": {
+        "A": 12,
+        "B": 13,
+        "C": 13,
+        "D": 12
+      }
+    },
+    "Q3": {
+      "count": 25,
+      "unique_base_structures": 25,
+      "max_questions_per_base": 1,
+      "base_structure_counts": {
+        "Ag2S_acanthite": 1,
+        "Al2O3_corundum": 1,
+        "BN_hexagonal": 1,
+        "BaTiO3_tetragonal": 1,
+        "CaCO3_aragonite": 1,
+        "CaF2_fluorite": 1,
+        "CsCl": 1,
+        "CuFeS2_chalcopyrite": 1,
+        "CuO_tenorite": 1,
+        "Fe3C_cementite": 1,
+        "FeS2_pyrite": 1,
+        "Fe_bcc": 1,
+        "LiNbO3_ferroelectric": 1,
+        "NaCl": 1,
+        "NiAs": 1,
+        "P_black": 1,
+        "PbCl2_cotunnite": 1,
+        "PbO_litharge": 1,
+        "SiC_3C": 1,
+        "Sn_beta": 1,
+        "SrTiO3_perovskite": 1,
+        "TiO2_anatase": 1,
+        "TiO2_rutile": 1,
+        "U_alpha": 1,
+        "ZnS_zincblende": 1
+      },
+      "answer_text_distribution": {
+        "B is closer": 12,
+        "C is closer": 13
+      },
+      "answer_letter_distribution": {
+        "A": 6,
+        "B": 6,
+        "C": 5,
+        "D": 8
+      }
+    },
+    "Q4": {
+      "count": 25,
+      "unique_base_structures": 25,
+      "max_questions_per_base": 1,
+      "base_structure_counts": {
+        "Ag2S_acanthite": 1,
+        "Al2O3_corundum": 1,
+        "AlB2": 1,
+        "As_A7": 1,
+        "BN_hexagonal": 1,
+        "C_graphite": 1,
+        "CaCO3_calcite": 1,
+        "CuFeS2_chalcopyrite": 1,
+        "CuO_tenorite": 1,
+        "Fe3C_cementite": 1,
+        "Fe_bcc": 1,
+        "Ga2O3_beta": 1,
+        "Mg2SiO4_forsterite": 1,
+        "MgAl2O4_spinel": 1,
+        "NaCl": 1,
+        "NiAs": 1,
+        "NiTi_B19prime": 1,
+        "P_black": 1,
+        "PbCl2_cotunnite": 1,
+        "PbO_litharge": 1,
+        "Se_trigonal": 1,
+        "SrTiO3_perovskite": 1,
+        "TiO2_anatase": 1,
+        "TiO2_rutile": 1,
+        "WC_hexagonal": 1
+      },
+      "answer_text_distribution": {
+        "cubic": 4,
+        "hexagonal": 5,
+        "monoclinic": 4,
+        "orthorhombic": 4,
+        "tetragonal": 4,
+        "trigonal": 4
+      },
+      "answer_letter_distribution": {
+        "A": 7,
+        "B": 4,
+        "C": 7,
+        "D": 7
+      }
+    },
+    "Q5": {
+      "count": 25,
+      "unique_base_structures": 25,
+      "max_questions_per_base": 1,
+      "base_structure_counts": {
+        "Ag2S_acanthite": 1,
+        "AlB2": 1,
+        "As_A7": 1,
+        "BN_hexagonal": 1,
+        "BaTiO3_tetragonal": 1,
+        "CaCO3_aragonite": 1,
+        "CaCO3_calcite": 1,
+        "Cu_fcc": 1,
+        "FeS2_marcasite": 1,
+        "Fe_bcc": 1,
+        "Ga2O3_beta": 1,
+        "Mg_hcp": 1,
+        "MoS2_2H": 1,
+        "NaCl": 1,
+        "P_black": 1,
+        "PbCl2_cotunnite": 1,
+        "Se_trigonal": 1,
+        "SiO2_coesite": 1,
+        "SnS_alpha": 1,
+        "TiO2_anatase": 1,
+        "TiO2_rutile": 1,
+        "U_alpha": 1,
+        "WC_hexagonal": 1,
+        "ZnS_zincblende": 1,
+        "ZrO2_baddeleyite": 1
+      },
+      "answer_text_distribution": {
+        "Different atomic arrangement": 6,
+        "Different element identities": 3,
+        "Different lattice dimensions": 3,
+        "Same structure": 13
+      },
+      "answer_letter_distribution": {
+        "A": 7,
+        "B": 8,
+        "C": 5,
+        "D": 5
+      }
+    },
+    "Q6": {
+      "count": 25,
+      "unique_base_structures": 25,
+      "max_questions_per_base": 1,
+      "base_structure_counts": {
+        "As2S3_orpiment": 1,
+        "BaTiO3_tetragonal": 1,
+        "C_diamond": 1,
+        "CaCO3_aragonite": 1,
+        "CaF2_fluorite": 1,
+        "CsCl": 1,
+        "CuFeS2_chalcopyrite": 1,
+        "CuO_tenorite": 1,
+        "Cu_fcc": 1,
+        "Fe3C_cementite": 1,
+        "FeS2_pyrite": 1,
+        "Fe_bcc": 1,
+        "Mg2SiO4_forsterite": 1,
+        "MgAl2O4_spinel": 1,
+        "NaCl": 1,
+        "P_black": 1,
+        "PbO_litharge": 1,
+        "SiC_3C": 1,
+        "SiO2_coesite": 1,
+        "Si_diamond": 1,
+        "SnS_alpha": 1,
+        "Sn_beta": 1,
+        "SrTiO3_perovskite": 1,
+        "U_alpha": 1,
+        "ZnS_zincblende": 1
+      },
+      "answer_text_distribution": {
+        "<100>": 3,
+        "<110>": 3,
+        "<111>": 3,
+        "<112>": 3,
+        "[001]": 4,
+        "[100]": 3,
+        "[110]": 3,
+        "[111]": 3
+      },
+      "answer_letter_distribution": {
+        "A": 7,
+        "B": 6,
+        "C": 6,
+        "D": 6
+      }
+    }
+  },
+  "q3_answer_text_distribution": {
+    "B is closer": 12,
+    "C is closer": 13
+  },
+  "q3_depth_trap_count": 12,
+  "q3_depth_trap_ratio": 0.48,
+  "q3_depth_trap_definition": "2D order in default first view v00 is opposite the 3D order",
+  "q4_crystal_system_distribution": {
+    "monoclinic": 4,
+    "tetragonal": 4,
+    "orthorhombic": 4,
+    "cubic": 4,
+    "hexagonal": 5,
+    "trigonal": 4
+  },
+  "q5_positive": 13,
+  "q5_negative_types": {
+    "delete_atom": 3,
+    "polymorph": 3,
+    "stretch_axis": 3,
+    "swap_elements": 3
+  },
+  "scene_count": 419,
+  "default_scene_images": 3352,
+  "strict_axis_images": 136,
+  "source_structure_count": 48,
+  "catalog_structure_count": 48,
+  "catalog_crystal_system_distribution": {
+    "cubic": 12,
+    "hexagonal": 8,
+    "monoclinic": 8,
+    "orthorhombic": 8,
+    "tetragonal": 6,
+    "trigonal": 6
+  }
+}

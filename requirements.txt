@@ -1,0 +1,7 @@
+# Python >= 3.10. Headless rendering and OpenAI-compatible HTTP evaluation.
+ase==3.26.0
+spglib==2.7.0
+matplotlib==3.10.7
+numpy==2.2.6
+PyYAML==6.0.3
+Pillow==13.0.0

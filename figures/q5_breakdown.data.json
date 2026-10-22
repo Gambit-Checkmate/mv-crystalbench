@@ -1,0 +1,163 @@
+{
+  "figure": "q5_breakdown",
+  "sources": [
+    {
+      "path": "results\\final_run\\gpt_image.jsonl",
+      "sha256": "ae6319777c82d08635116e7e758af864118e43df9d82ba2752447b2272a644d0"
+    },
+    {
+      "path": "results\\final_run\\gpt_text.jsonl",
+      "sha256": "eb5648909eb581125a280da7de12f426037b6ca7a635c4ca62b9dd29cebae89e"
+    },
+    {
+      "path": "results\\final_run\\claude_image.jsonl",
+      "sha256": "14195e6a3539c96f7c72bc0ac0ccaaaa05f53fc1bf3c6fad45e33d6894ff9fa2"
+    },
+    {
+      "path": "results\\final_run\\claude_text.jsonl",
+      "sha256": "b7d1920c7e39770f351b1d5ddb6d384871ee86812f501a508d1494820c7470e2"
+    }
+  ],
+  "image_size": [
+    1920,
+    1080
+  ],
+  "title": "Same crystal, different viewing angle: is it the same structure?",
+  "cohort": "Q5 positives only; is_same_structure=true and negative_type=null",
+  "verified_rows": [
+    {
+      "model": "gpt",
+      "condition": "image",
+      "n": 13,
+      "correct": 7,
+      "accuracy": 0.5384615384615384,
+      "question_ids": [
+        "mvcb-q5-0012",
+        "mvcb-q5-0015",
+        "mvcb-q5-0020",
+        "mvcb-q5-0023",
+        "mvcb-q5-0029",
+        "mvcb-q5-0046",
+        "mvcb-q5-0051",
+        "mvcb-q5-0053",
+        "mvcb-q5-0056",
+        "mvcb-q5-0060",
+        "mvcb-q5-0067",
+        "mvcb-q5-0071",
+        "mvcb-q5-0095"
+      ],
+      "correct_question_ids": [
+        "mvcb-q5-0012",
+        "mvcb-q5-0020",
+        "mvcb-q5-0029",
+        "mvcb-q5-0053",
+        "mvcb-q5-0056",
+        "mvcb-q5-0067",
+        "mvcb-q5-0095"
+      ]
+    },
+    {
+      "model": "gpt",
+      "condition": "text",
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0,
+      "question_ids": [
+        "mvcb-q5-0012",
+        "mvcb-q5-0015",
+        "mvcb-q5-0020",
+        "mvcb-q5-0023",
+        "mvcb-q5-0029",
+        "mvcb-q5-0046",
+        "mvcb-q5-0051",
+        "mvcb-q5-0053",
+        "mvcb-q5-0056",
+        "mvcb-q5-0060",
+        "mvcb-q5-0067",
+        "mvcb-q5-0071",
+        "mvcb-q5-0095"
+      ],
+      "correct_question_ids": [
+        "mvcb-q5-0012",
+        "mvcb-q5-0015",
+        "mvcb-q5-0020",
+        "mvcb-q5-0023",
+        "mvcb-q5-0029",
+        "mvcb-q5-0046",
+        "mvcb-q5-0051",
+        "mvcb-q5-0053",
+        "mvcb-q5-0056",
+        "mvcb-q5-0060",
+        "mvcb-q5-0067",
+        "mvcb-q5-0071",
+        "mvcb-q5-0095"
+      ]
+    },
+    {
+      "model": "claude",
+      "condition": "image",
+      "n": 13,
+      "correct": 4,
+      "accuracy": 0.3076923076923077,
+      "question_ids": [
+        "mvcb-q5-0012",
+        "mvcb-q5-0015",
+        "mvcb-q5-0020",
+        "mvcb-q5-0023",
+        "mvcb-q5-0029",
+        "mvcb-q5-0046",
+        "mvcb-q5-0051",
+        "mvcb-q5-0053",
+        "mvcb-q5-0056",
+        "mvcb-q5-0060",
+        "mvcb-q5-0067",
+        "mvcb-q5-0071",
+        "mvcb-q5-0095"
+      ],
+      "correct_question_ids": [
+        "mvcb-q5-0012",
+        "mvcb-q5-0023",
+        "mvcb-q5-0029",
+        "mvcb-q5-0071"
+      ]
+    },
+    {
+      "model": "claude",
+      "condition": "text",
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0,
+      "question_ids": [
+        "mvcb-q5-0012",
+        "mvcb-q5-0015",
+        "mvcb-q5-0020",
+        "mvcb-q5-0023",
+        "mvcb-q5-0029",
+        "mvcb-q5-0046",
+        "mvcb-q5-0051",
+        "mvcb-q5-0053",
+        "mvcb-q5-0056",
+        "mvcb-q5-0060",
+        "mvcb-q5-0067",
+        "mvcb-q5-0071",
+        "mvcb-q5-0095"
+      ],
+      "correct_question_ids": [
+        "mvcb-q5-0012",
+        "mvcb-q5-0015",
+        "mvcb-q5-0020",
+        "mvcb-q5-0023",
+        "mvcb-q5-0029",
+        "mvcb-q5-0046",
+        "mvcb-q5-0051",
+        "mvcb-q5-0053",
+        "mvcb-q5-0056",
+        "mvcb-q5-0060",
+        "mvcb-q5-0067",
+        "mvcb-q5-0071",
+        "mvcb-q5-0095"
+      ]
+    }
+  ],
+  "confidence_intervals": "Not plotted; raw counts shown."
+}

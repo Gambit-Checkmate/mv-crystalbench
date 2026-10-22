@@ -1,0 +1,55 @@
+{
+  "models": [
+    "gpt",
+    "claude"
+  ],
+  "source_csv_sha256": {
+    "ablation_summary.csv": "d517eb7893c220c58e8d543cdc20ee174e6a75a22bc1c7f1b6856ee8ea1ce3ce",
+    "ablation_views.csv": "30a9c9aac9a442fae59945bf32f055ebb3242744f9a5a91fb71272100f1bcb87"
+  },
+  "protected_files_sha256": {
+    "ablation_summary.csv": "d517eb7893c220c58e8d543cdc20ee174e6a75a22bc1c7f1b6856ee8ea1ce3ce",
+    "ablation_views.csv": "30a9c9aac9a442fae59945bf32f055ebb3242744f9a5a91fb71272100f1bcb87",
+    "visibility_vs_accuracy.csv": "6e411b635665a106469ea081e75ec6c1a548900f4992190dfa7558a4eeec5a57",
+    "ablation_views.png": "955453a841ca049196c81fd560f9f1cb8130bde9dbd9b4b67bbe8843e6197651",
+    "visibility_vs_accuracy.png": "e606aafc6d3f5a0543f1093dd84f3e766d50fd136cecde3fbbcfa196d47fe6ac",
+    "ablation_plot_info.json": "ca13c7c967b9f0adeb26c4bf16490c1114ea3910ecb36db5d6f329b8984e92da"
+  },
+  "protected_files_unchanged": true,
+  "statistics_recomputed": false,
+  "api_calls": false,
+  "data_results_written": false,
+  "resolution_pixels": [
+    1920,
+    1080
+  ],
+  "summary_ylim_percent": [
+    60,
+    100
+  ],
+  "q3_ylim_percent": [
+    50,
+    100
+  ],
+  "q3_gain_metrics": {
+    "gpt": {
+      "n": 30,
+      "k1_random_accuracy": 0.7333333333333333,
+      "k8_accuracy": 0.9333333333333333,
+      "gain_pp": 20.000000000000007,
+      "gain_interpretation": "Observed point-estimate difference; no difference CI is inferred from marginal error bars."
+    },
+    "claude": {
+      "n": 30,
+      "k1_random_accuracy": 0.8,
+      "k8_accuracy": 0.9666666666666667,
+      "gain_pp": 16.666666666666664,
+      "gain_interpretation": "Observed point-estimate difference; no difference CI is inferred from marginal error bars."
+    }
+  },
+  "previous_summary_png_sha256": "c8e6def4385d141c93276ce0b0558ac6f562fc0ec8a9b7bd71a6d0211156ff46",
+  "output_png_sha256": {
+    "ablation_summary.png": "ac6c11d0ab7fb8b25aba136c594756f9deed10b7fc385cb8a444b0988c15458d",
+    "ablation_q3.png": "e61baf7eedf02ba5762a953e9d9af7f2f50d1046d6650b0d39bf3ecbbf3a502f"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "question_id": "mvcb-q3-0030",
+  "question": {
+    "qtype": "Q3",
+    "difficulty": "hard",
+    "structure": "U_alpha",
+    "scene_id": "s25601764ffead701b4d2",
+    "view_ids": [
+      "s25601764ffead701b4d2:v00",
+      "s25601764ffead701b4d2:v01",
+      "s25601764ffead701b4d2:v02"
+    ],
+    "image_paths": [
+      "scenes/s25601764ffead701b4d2/v00.png",
+      "scenes/s25601764ffead701b4d2/v01.png",
+      "scenes/s25601764ffead701b4d2/v02.png"
+    ],
+    "question": "Consider the labeled atoms A, B, and C. Which of B and C is closer to A in three-dimensional Euclidean distance between the displayed atoms? Use all views.",
+    "answer_text": "C is closer",
+    "meta": {
+      "depth_trap": true,
+      "depth_trap_definition": "The ordering of A-B and A-C screen distances in the first default view (v00) is opposite to their displayed Cartesian 3D distances.",
+      "depth_trap_reference_view": "v00",
+      "trap_view_ids": [
+        "v00",
+        "v01"
+      ],
+      "projected_distances": [
+        {
+          "view_id": "v00",
+          "distance_AB_px": 252.4118791012754,
+          "distance_AC_px": 264.7630281309349,
+          "opposite_to_3d": true
+        },
+        {
+          "view_id": "v01",
+          "distance_AB_px": 115.87429157050344,
+          "distance_AC_px": 264.76302813093497,
+          "opposite_to_3d": true
+        },
+        {
+          "view_id": "v02",
+          "distance_AB_px": 265.950440363923,
+          "distance_AC_px": 234.28158355902386,
+          "opposite_to_3d": false
+        }
+      ],
+      "display_indices": {
+        "A": 7,
+        "B": 0,
+        "C": 8
+      },
+      "distance_AB_angstrom": 5.99702807215443,
+      "distance_AC_angstrom": 4.9316,
+      "relative_distance_gap": 0.1776593438175578,
+      "distance_convention": "Cartesian Euclidean distance between displayed atoms; no MIC",
+      "minimum_required_visible_fraction": 0.7,
+      "highlight_visibility_by_view": {
+        "A": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "B": [
+          0.7195821123710027,
+          0.8052229299363057,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.7754167196844383,
+          1.0
+        ],
+        "C": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.824166030048383,
+          1.0,
+          1.0
+        ]
+      },
+      "visibility_view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04",
+        "v05",
+        "v06",
+        "v07"
+      ],
+      "augmentation": {
+        "variant_index": 3,
+        "origin_shift_fractional": [
+          0.0,
+          0.0,
+          0.25
+        ],
+        "axis_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "synthetic_strain": false
+      },
+      "text_applicable": true,
+      "base_structure": "U_alpha"
+    },
+    "text_repr": "Lattice parameters (lengths in angstrom, angles in degrees):\na=2.844400000, b=5.868900000, c=4.931600000, alpha=90.000000000, beta=90.000000000, gamma=90.000000000\nLattice vectors (rows a, b, c; angstrom):\n2.844400000 0.000000000 0.000000000\n0.000000000 5.868900000 0.000000000\n0.000000000 0.000000000 4.931600000\nDisplayed atoms: index element fractional_x fractional_y fractional_z label\nFractional coordinates use the lattice vectors above; periodic copies are listed separately and coordinates are not wrapped.\n0 U 0.000000000 0.102280000 0.500000000 [B]\n1 U 1.000000000 0.102280000 0.500000000\n2 U 0.500000000 0.397720000 0.000000000\n3 U 0.500000000 0.397720000 1.000000000\n4 U 0.500000000 0.602280000 0.500000000\n5 U 0.000000000 0.897720000 0.000000000\n6 U 0.000000000 0.897720000 1.000000000\n7 U 1.000000000 0.897720000 0.000000000 [A]\n8 U 1.000000000 0.897720000 1.000000000 [C]",
+    "id": "mvcb-q3-0030",
+    "options": {
+      "A": "C is closer",
+      "B": "B is closer",
+      "C": "Equally close",
+      "D": "Cannot be determined"
+    },
+    "answer": "A"
+  },
+  "condition": "image",
+  "selection": "A mini question both models answered incorrectly; illustrative, not representative.",
+  "responses": {
+    "gpt": {
+      "prediction": "B",
+      "raw_response": "Answer: B",
+      "response_model": "gpt-6.1-sol",
+      "correct": false,
+      "status": "ok"
+    },
+    "claude": {
+      "prediction": "B",
+      "raw_response": "Reading the three views as alpha-uranium (an orthorhombic cell, a ≈ 2.85, b ≈ 5.87, c ≈ 4.95 Å) is my own inference from the cell proportions, not something the images state.\n\n- **A to C:** A and C sit directly above one another, a full cell height apart, so their distance is about c ≈ 4.95 Å.\n- **A to B:** B sits at mid-height, so it is offset from A by about c/2 ≈ 2.5 Å vertically. It is also offset by about a/2 ≈ 1.4 Å along a and about b/2 ≈ 2.9 Å along b. That gives a distance of about √(1.4² + 2.9² + 2.5²) ≈ 4.1 Å.\n\nSince 4.1 Å is less than 4.95 Å, B is closer to A than C is.\n\nAnswer: B",
+      "response_model": "claude-sonnet-5-5",
+      "correct": false,
+      "status": "ok"
+    }
+  },
+  "source_sha256": {
+    "data\\questions_mini.jsonl": "2ce9e318ba32e9b8b4f2c1352daed9bdaca3976dfee9a048ba93a5bfa3cfc138",
+    "results\\final_run\\gpt_image.jsonl": "ae6319777c82d08635116e7e758af864118e43df9d82ba2752447b2272a644d0",
+    "results\\final_run\\claude_image.jsonl": "14195e6a3539c96f7c72bc0ac0ccaaaa05f53fc1bf3c6fad45e33d6894ff9fa2"
+  }
+}

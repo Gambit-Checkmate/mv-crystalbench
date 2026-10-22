@@ -1,0 +1,75 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+.release_checks/
+.env
+.env.*
+video/
+hf_dataset/
+SUBMISSION.md
+results/.ablation_cache/
+
+# Local API configuration, credentials, operational logs, and temporary files.
+# models.example.yaml contains only public endpoints and environment-variable names.
+models.yaml
+models.local.*
+**/credentials*
+**/secrets.*
+**/api_keys*
+*.pem
+*.key
+*.log
+*.tmp
+*.lock
+
+# Fresh reproductions are intentionally separate from frozen published artifacts.
+data_reproduced/
+reproduced/
+reproduced_results/
+
+# Generated scene caches, pilots, inspection renders, and unused images stay local.
+# The compact hf_dataset/images tree is the distributable image collection.
+data/*
+!data/questions.jsonl
+!data/questions_mini.jsonl
+!data/generation_stats.txt
+!data/stats.json
+!data/stats_mini.json
+!data/audit_report.json
+!data/audit_report_mini.json
+!data/structure_sources/
+
+# Keep the scientific records; exclude API inventories, billing ledgers,
+# smoke probes, historical diagnostics, dry runs, and request caches by default.
+results/*
+!results/main_tables.txt
+!results/main_tables.csv
+!results/main_tables_ci.csv
+!results/main_summary.csv
+!results/summary.csv
+!results/summary.txt
+!results/key_findings.txt
+!results/key_findings.json
+!results/ablation_gpt.jsonl
+!results/ablation_claude.jsonl
+!results/ablation_gpt.summary.json
+!results/ablation_claude.summary.json
+!results/final_run/
+results/final_run/*
+!results/final_run/gpt_image.jsonl
+!results/final_run/gpt_text.jsonl
+!results/final_run/gpt_no_image.jsonl
+!results/final_run/claude_image.jsonl
+!results/final_run/claude_text.jsonl
+!results/final_run/claude_no_image.jsonl
+!results/final_run/random_image.jsonl
+!results/final_run/random_text.jsonl
+!results/final_run/random_no_image.jsonl
+!results/final_run/completion_manifest.json
+!results/final_run/ablation_gpt.plan.json
+!results/final_run/ablation_claude.plan.json

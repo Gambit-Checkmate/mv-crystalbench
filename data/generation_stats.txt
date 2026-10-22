@@ -1,0 +1,29 @@
+MV-CrystalBench generation statistics
+Structures: 48
+Crystal systems: {"cubic": 12, "hexagonal": 8, "monoclinic": 8, "orthorhombic": 8, "tetragonal": 6, "trigonal": 6}
+Full questions: 716; mini questions: 200
+
+FULL
+Q1a      N=100 unique_structures=48 max_per_base=3 letters={"A": 25, "B": 25, "C": 25, "D": 25} answers={"1": 2, "10": 4, "12": 9, "13": 4, "14": 6, "15": 2, "16": 3, "18": 4, "19": 1, "2": 9, "22": 1, "24": 1, "31": 1, "4": 13, "45": 1, "5": 4, "6": 13, "8": 16, "9": 6}
+Q1b      N=100 unique_structures=48 max_per_base=3 letters={"A": 25, "B": 25, "C": 25, "D": 25} answers={"1": 7, "12": 4, "16": 3, "18": 1, "2": 20, "3": 5, "32": 1, "4": 34, "6": 8, "8": 17}
+Q2 easy  N= 60 unique_structures=39 max_per_base=2 letters={"A": 17, "B": 15, "C": 14, "D": 14} answers={"12": 4, "2": 7, "3": 17, "4": 13, "6": 15, "8": 4}
+Q2 hard  N= 60 unique_structures=33 max_per_base=2 letters={"A": 13, "B": 15, "C": 16, "D": 16} answers={"12": 1, "2": 11, "3": 13, "4": 23, "6": 9, "8": 3}
+Q3       N=100 unique_structures=48 max_per_base=3 letters={"A": 25, "B": 25, "C": 25, "D": 25} answers={"B is closer": 50, "C is closer": 50}
+Q4       N= 96 unique_structures=48 max_per_base=3 letters={"A": 24, "B": 24, "C": 24, "D": 24} answers={"cubic": 16, "hexagonal": 16, "monoclinic": 16, "orthorhombic": 16, "tetragonal": 16, "trigonal": 16}
+Q5       N=100 unique_structures=48 max_per_base=3 letters={"A": 25, "B": 25, "C": 25, "D": 25} answers={"Different atomic arrangement": 25, "Different element identities": 13, "Different lattice dimensions": 12, "Same structure": 50}
+Q6       N=100 unique_structures=34 max_per_base=3 letters={"A": 25, "B": 25, "C": 25, "D": 25} answers={"<100>": 7, "<110>": 8, "<111>": 11, "<112>": 9, "[001]": 18, "[100]": 19, "[110]": 14, "[111]": 14}
+Q3 depth_trap: {"False": 50, "True": 50}
+Q5 types: {"positive": 50, "stretch_axis": 12, "swap_elements": 13, "polymorph": 12, "delete_atom": 13}
+
+MINI
+Q1a      N= 25 unique_structures=25 max_per_base=1 letters={"A": 7, "B": 6, "C": 6, "D": 6} answers={"1": 1, "10": 1, "12": 2, "13": 1, "14": 2, "15": 1, "16": 1, "18": 1, "19": 1, "2": 2, "22": 1, "31": 1, "4": 2, "45": 1, "5": 1, "6": 2, "8": 2, "9": 2}
+Q1b      N= 25 unique_structures=25 max_per_base=1 letters={"A": 8, "B": 6, "C": 3, "D": 8} answers={"1": 1, "12": 2, "16": 1, "18": 1, "2": 5, "3": 1, "32": 1, "4": 7, "6": 2, "8": 4}
+Q2 easy  N= 25 unique_structures=25 max_per_base=1 letters={"A": 6, "B": 7, "C": 6, "D": 6} answers={"12": 2, "2": 5, "3": 5, "4": 5, "6": 5, "8": 3}
+Q2 hard  N= 25 unique_structures=25 max_per_base=1 letters={"A": 6, "B": 6, "C": 7, "D": 6} answers={"12": 1, "2": 5, "3": 6, "4": 6, "6": 5, "8": 2}
+Q3       N= 25 unique_structures=25 max_per_base=1 letters={"A": 6, "B": 6, "C": 5, "D": 8} answers={"B is closer": 12, "C is closer": 13}
+Q4       N= 25 unique_structures=25 max_per_base=1 letters={"A": 7, "B": 4, "C": 7, "D": 7} answers={"cubic": 4, "hexagonal": 5, "monoclinic": 4, "orthorhombic": 4, "tetragonal": 4, "trigonal": 4}
+Q5       N= 25 unique_structures=25 max_per_base=1 letters={"A": 7, "B": 8, "C": 5, "D": 5} answers={"Different atomic arrangement": 6, "Different element identities": 3, "Different lattice dimensions": 3, "Same structure": 13}
+Q6       N= 25 unique_structures=25 max_per_base=1 letters={"A": 7, "B": 6, "C": 6, "D": 6} answers={"<100>": 3, "<110>": 3, "<111>": 3, "<112>": 3, "[001]": 4, "[100]": 3, "[110]": 3, "[111]": 3}
+Q3 depth_trap: {"True": 12, "False": 13}
+Q5 types: {"positive": 13, "delete_atom": 3, "polymorph": 3, "stretch_axis": 3, "swap_elements": 3}
+

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite MV-CrystalBench when using the benchmark, renderings, or code."
+type: dataset
+title: "MV-CrystalBench: Multi-view Crystal Spatial Reasoning Benchmark"
+authors:
+  - name: "MV-CrystalBench contributors"
+year: 2026
+date-released: 2026-10-22
+license: CC-BY-4.0
+keywords:
+  - crystal structures
+  - vision-language models
+  - spatial reasoning
+  - multi-view evaluation

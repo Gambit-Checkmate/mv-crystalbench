@@ -1,0 +1,109 @@
+model,condition,task,n,expected_n,missing_count,recorded_count,skipped_count,n_structures,correct,accuracy,ci_low,ci_high,error_count,invalid_count,bootstrap_replicates,ci_method,ci_note
+gpt,image,Q1a,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,image,Q1b,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,image,Q2_easy,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,image,Q2_hard,25,25,0,25,0,25,23,0.92,0.8,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,image,Q3,25,25,0,25,0,25,23,0.92,0.8,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,image,Q4,25,25,0,25,0,25,19,0.76,0.6,0.92,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,image,Q5,25,25,0,25,0,25,16,0.64,0.44,0.8,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,image,Q6,25,25,0,25,0,25,22,0.88,0.76,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,image,overall,200,200,0,200,0,48,178,0.89,0.8418023158248028,0.9322935537439613,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,image,Q1a,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,image,Q1b,25,25,0,25,0,25,24,0.96,0.88,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,image,Q2_easy,25,25,0,25,0,25,24,0.96,0.88,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,image,Q2_hard,25,25,0,25,0,25,23,0.92,0.8,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,image,Q3,25,25,0,25,0,25,24,0.96,0.88,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,image,Q4,25,25,0,25,0,25,21,0.84,0.68,0.96,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,image,Q5,25,25,0,25,0,25,8,0.32,0.16,0.52,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,image,Q6,25,25,0,25,0,25,19,0.76,0.6,0.92,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,image,overall,200,200,0,200,0,48,168,0.84,0.7755004394102138,0.8962300811418517,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+kimi,image,Q1a,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,image,Q1b,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,image,Q2_easy,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,image,Q2_hard,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,image,Q3,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,image,Q4,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,image,Q5,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,image,Q6,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,image,overall,0,200,200,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+random,image,Q1a,25,25,0,25,0,25,5,0.2,0.04,0.36,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,image,Q1b,25,25,0,25,0,25,6,0.24,0.08,0.4,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,image,Q2_easy,25,25,0,25,0,25,8,0.32,0.16,0.48099999999999454,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,image,Q2_hard,25,25,0,25,0,25,7,0.28,0.12,0.44,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,image,Q3,25,25,0,25,0,25,10,0.4,0.2,0.6,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,image,Q4,25,25,0,25,0,25,10,0.4,0.2,0.56,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,image,Q5,25,25,0,25,0,25,3,0.12,0.0,0.28,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,image,Q6,25,25,0,25,0,25,6,0.24,0.08,0.44,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,image,overall,200,200,0,200,0,48,55,0.275,0.23029545454545455,0.32000970873786405,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,text,Q1a,0,0,0,25,25,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+gpt,text,Q1b,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,text,Q2_easy,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,text,Q2_hard,25,25,0,25,0,25,24,0.96,0.88,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,text,Q3,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,text,Q4,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,text,Q5,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,text,Q6,0,0,0,25,25,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+gpt,text,overall,150,150,0,200,50,48,149,0.9933333333333333,0.9791666666666666,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,text,Q1a,0,0,0,25,25,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+claude,text,Q1b,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,text,Q2_easy,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,text,Q2_hard,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,text,Q3,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,text,Q4,25,25,0,25,0,25,23,0.92,0.8,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,text,Q5,25,25,0,25,0,25,25,1.0,1.0,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,text,Q6,0,0,0,25,25,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+claude,text,overall,150,150,0,200,50,48,148,0.9866666666666667,0.9652777777777778,1.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+kimi,text,Q1a,0,0,0,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,text,Q1b,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,text,Q2_easy,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,text,Q2_hard,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,text,Q3,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,text,Q4,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,text,Q5,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,text,Q6,0,0,0,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,text,overall,0,150,150,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+random,text,Q1a,0,0,0,25,25,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+random,text,Q1b,25,25,0,25,0,25,6,0.24,0.08,0.44,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,text,Q2_easy,25,25,0,25,0,25,8,0.32,0.16,0.52,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,text,Q2_hard,25,25,0,25,0,25,7,0.28,0.12,0.48,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,text,Q3,25,25,0,25,0,25,10,0.4,0.2,0.6,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,text,Q4,25,25,0,25,0,25,10,0.4,0.2,0.6,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,text,Q5,25,25,0,25,0,25,3,0.12,0.0,0.24,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,text,Q6,0,0,0,25,25,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+random,text,overall,150,150,0,200,50,48,44,0.29333333333333333,0.22928583322925775,0.35917605633802807,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,no_image,Q1a,25,25,0,25,0,25,9,0.36,0.16,0.56,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,no_image,Q1b,25,25,0,25,0,25,19,0.76,0.6,0.92,0,1,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,no_image,Q2_easy,25,25,0,25,0,25,6,0.24,0.08,0.4,0,7,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,no_image,Q2_hard,25,25,0,25,0,25,6,0.24,0.08,0.44,0,7,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,no_image,Q3,25,25,0,25,0,25,0,0.0,0.0,0.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,no_image,Q4,25,25,0,25,0,25,4,0.16,0.04,0.32,0,8,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,no_image,Q5,25,25,0,25,0,25,7,0.28,0.12,0.48,0,11,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,no_image,Q6,25,25,0,25,0,25,6,0.24,0.08,0.44,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+gpt,no_image,overall,200,200,0,200,0,48,57,0.285,0.22659894401654737,0.33962489843820526,0,34,2000,"percentile 95%, resample whole base_structure clusters",
+claude,no_image,Q1a,25,25,0,25,0,25,14,0.56,0.36,0.76,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,no_image,Q1b,25,25,0,25,0,25,17,0.68,0.48,0.84,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,no_image,Q2_easy,25,25,0,25,0,25,8,0.32,0.16,0.52,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,no_image,Q2_hard,25,25,0,25,0,25,10,0.4,0.2,0.6,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,no_image,Q3,25,25,0,25,0,25,0,0.0,0.0,0.0,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,no_image,Q4,25,25,0,25,0,25,4,0.16,0.04,0.32,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,no_image,Q5,25,25,0,25,0,25,9,0.36,0.16,0.56,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,no_image,Q6,25,25,0,25,0,25,9,0.36,0.16,0.56,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+claude,no_image,overall,200,200,0,200,0,48,71,0.355,0.28077905491698596,0.42655245292686045,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+kimi,no_image,Q1a,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,no_image,Q1b,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,no_image,Q2_easy,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,no_image,Q2_hard,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,no_image,Q3,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,no_image,Q4,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,no_image,Q5,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,no_image,Q6,0,25,25,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+kimi,no_image,overall,0,200,200,0,0,0,0,,,,0,0,2000,"percentile 95%, resample whole base_structure clusters",no applicable questions
+random,no_image,Q1a,25,25,0,25,0,25,5,0.2,0.04,0.36,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,no_image,Q1b,25,25,0,25,0,25,6,0.24,0.08,0.4,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,no_image,Q2_easy,25,25,0,25,0,25,8,0.32,0.16,0.52,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,no_image,Q2_hard,25,25,0,25,0,25,7,0.28,0.12,0.48,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,no_image,Q3,25,25,0,25,0,25,10,0.4,0.2,0.6,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,no_image,Q4,25,25,0,25,0,25,10,0.4,0.2,0.6,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,no_image,Q5,25,25,0,25,0,25,3,0.12,0.0,0.24,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,no_image,Q6,25,25,0,25,0,25,6,0.24,0.08,0.4,0,0,2000,"percentile 95%, resample whole base_structure clusters",
+random,no_image,overall,200,200,0,200,0,48,55,0.275,0.22631578947368422,0.3217821782178218,0,0,2000,"percentile 95%, resample whole base_structure clusters",

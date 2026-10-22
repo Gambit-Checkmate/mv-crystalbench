@@ -1,0 +1,98 @@
+{
+  "question_id": "mvcb-q5-0046",
+  "question": {
+    "qtype": "Q5",
+    "difficulty": "comparison",
+    "structure": "Se_trigonal",
+    "scene_id": "s139c925b8b5d7c8cc997",
+    "view_ids": [
+      "s139c925b8b5d7c8cc997:v00",
+      "s139c925b8b5d7c8cc997:v01",
+      "s139c925b8b5d7c8cc997:v02",
+      "s139c925b8b5d7c8cc997:v03",
+      "s139c925b8b5d7c8cc997:v04",
+      "s139c925b8b5d7c8cc997:v05"
+    ],
+    "image_paths": [
+      "scenes/s139c925b8b5d7c8cc997/v00.png",
+      "scenes/s139c925b8b5d7c8cc997/v01.png",
+      "scenes/s139c925b8b5d7c8cc997/v02.png",
+      "scenes/s139c925b8b5d7c8cc997/v03.png",
+      "scenes/s139c925b8b5d7c8cc997/v04.png",
+      "scenes/s139c925b8b5d7c8cc997/v05.png"
+    ],
+    "question": "The first three images form Group 1; the last three form Group 2. Do they represent the same periodic structure, allowing a global translation and different viewing directions? If different, use these categories: 'Different element identities' means element substitutions at unchanged sites; 'Different atomic arrangement' includes missing atoms or a different polymorph; 'Different lattice dimensions' means only the cell dimensions changed while fractional atomic coordinates stayed unchanged.",
+    "answer_text": "Same structure",
+    "meta": {
+      "negative_type": null,
+      "is_same_structure": true,
+      "secondary_scene_id": "s139c925b8b5d7c8cc997",
+      "view_groups": [
+        {
+          "label": "Group 1",
+          "image_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "label": "Group 2",
+          "image_indices": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "augmentation": {
+        "variant_index": 0,
+        "origin_shift_fractional": [
+          0,
+          0,
+          0
+        ],
+        "axis_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "synthetic_strain": false
+      },
+      "base_structure": "Se_trigonal",
+      "text_applicable": true
+    },
+    "text_repr": "Group 1:\nLattice parameters (lengths in angstrom, angles in degrees):\na=4.366200000, b=4.366200000, c=4.953600000, alpha=90.000000000, beta=90.000000000, gamma=120.000000000\nLattice vectors (rows a, b, c; angstrom):\n4.366200000 0.000000000 0.000000000\n-2.183100000 3.781240118 0.000000000\n0.000000000 0.000000000 4.953600000\nDisplayed atoms: index element fractional_x fractional_y fractional_z label\nFractional coordinates use the lattice vectors above; periodic copies are listed separately and coordinates are not wrapped.\n0 Se 0.225400000 0.000000000 0.333333333\n1 Se 0.225400000 1.000000000 0.333333333\n2 Se 0.000000000 0.225400000 0.666666667\n3 Se 1.000000000 0.225400000 0.666666667\n4 Se 0.774600000 0.774600000 0.000000000\n5 Se 0.774600000 0.774600000 1.000000000\n\nGroup 2:\nLattice parameters (lengths in angstrom, angles in degrees):\na=4.366200000, b=4.366200000, c=4.953600000, alpha=90.000000000, beta=90.000000000, gamma=120.000000000\nLattice vectors (rows a, b, c; angstrom):\n4.366200000 0.000000000 0.000000000\n-2.183100000 3.781240118 0.000000000\n0.000000000 0.000000000 4.953600000\nDisplayed atoms: index element fractional_x fractional_y fractional_z label\nFractional coordinates use the lattice vectors above; periodic copies are listed separately and coordinates are not wrapped.\n0 Se 0.225400000 0.000000000 0.333333333\n1 Se 0.225400000 1.000000000 0.333333333\n2 Se 0.000000000 0.225400000 0.666666667\n3 Se 1.000000000 0.225400000 0.666666667\n4 Se 0.774600000 0.774600000 0.000000000\n5 Se 0.774600000 0.774600000 1.000000000",
+    "id": "mvcb-q5-0046",
+    "options": {
+      "A": "Different lattice dimensions",
+      "B": "Same structure",
+      "C": "Different atomic arrangement",
+      "D": "Different element identities"
+    },
+    "answer": "B"
+  },
+  "condition": "image",
+  "selection": "A mini question both models answered incorrectly; illustrative, not representative.",
+  "responses": {
+    "gpt": {
+      "prediction": "A",
+      "raw_response": "Answer: A",
+      "response_model": "gpt-6.1-sol",
+      "correct": false,
+      "status": "ok"
+    },
+    "claude": {
+      "prediction": "A",
+      "raw_response": "Both groups show a cell containing six Se atoms with a single visible bond, so the element identity and atom count match. The cells differ in shape. Group 1 looks close to a regular box, while Group 2 is strongly sheared, as in the parallelogram outline of Image 5. This is a judgement from the cell outlines rather than a measurement, and I could not rule out a different atomic arrangement with certainty. The change looks like one of cell dimensions only.\n\nAnswer: A",
+      "response_model": "claude-sonnet-5-5",
+      "correct": false,
+      "status": "ok"
+    }
+  },
+  "source_sha256": {
+    "data\\questions_mini.jsonl": "2ce9e318ba32e9b8b4f2c1352daed9bdaca3976dfee9a048ba93a5bfa3cfc138",
+    "results\\final_run\\gpt_image.jsonl": "ae6319777c82d08635116e7e758af864118e43df9d82ba2752447b2272a644d0",
+    "results\\final_run\\claude_image.jsonl": "14195e6a3539c96f7c72bc0ac0ccaaaa05f53fc1bf3c6fad45e33d6894ff9fa2"
+  }
+}

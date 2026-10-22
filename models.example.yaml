@@ -1,0 +1,115 @@
+# Public reproduction template for the frozen October 2026 experiment.
+# IDs and prices are historical route metadata, not verified vendor identity
+# or a current availability/pricing guarantee. Copy to ignored models.yaml.
+# All model names/endpoints are examples; enable only accounts you can access.
+# Never put an API key here: set the named environment variable instead.
+# Official references checked 2026-10-21:
+# https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create
+# https://www.alibabacloud.com/help/en/model-studio/qwen-vl-compatible-with-openai
+# https://openrouter.ai/developers
+# https://openrouter.ai/openai/gpt-4.1/apps
+defaults:
+  temperature: 0
+  max_tokens: 1024
+  token_limit_field: max_tokens
+  supports_multi_image: true
+  requires_api_key: true
+
+models:
+  gpt:
+    name: GPT-6.1 Sol
+    provider: nexfaro
+    base_url: https://nexfaro.com/v1
+    api_key_env: NEXFARO_API_KEY
+    model: gpt-6.1-sol
+    max_tokens: 8192
+    token_limit_field: max_completion_tokens
+    supports_multi_image: true
+    price_input_per_million: 2.0
+    price_output_per_million: 10.0
+    price_source: https://nexfaro.com/api/v1/model-plaza
+    extra_body:
+      reasoning_effort: low
+
+  claude:
+    name: Claude Sonnet 5.5
+    provider: heju
+    base_url: https://www.hejuapi.com/v1
+    api_key_env: HEJU_API_KEY
+    model: claude-sonnet-5-5
+    max_tokens: 8192
+    supports_multi_image: true
+    omit_temperature: true
+    budget_max_input_tokens: 200000
+    budget_output_tokens_allowance: 16384
+    headers:
+      User-Agent: Mozilla/5.0
+    # Public tariff $2/$10 multiplied by the Claude Max group ratio 1.3.
+    price_input_per_million: 2.6
+    price_output_per_million: 13.0
+    price_source: https://www.hejuapi.com/api/pricing
+    extra_body:
+      thinking:
+        type: between_tools
+
+  kimi:
+    name: Kimi K3
+    provider: nexfaro
+    base_url: https://nexfaro.com/v1
+    api_key_env: NEXFARO_KIMI_API_KEY
+    model: kimi-k3
+    max_tokens: 8192
+    token_limit_field: max_completion_tokens
+    supports_multi_image: true
+    omit_temperature: true
+    budget_max_input_tokens: 200000
+    budget_output_tokens_allowance: 16384
+    # Published Kimi route: $20/$100 per million times group multiplier 0.2.
+    price_input_per_million: 4.0
+    price_output_per_million: 20.0
+    price_source: https://nexfaro.com/api/v1/model-plaza
+    extra_body:
+      reasoning_effort: low
+
+  nex_gpt61_sol:
+    name: Nexfaro GPT-6.1 Sol pilot
+    provider: nexfaro
+    base_url: https://nexfaro.com/v1
+    api_key_env: NEXFARO_API_KEY
+    model: gpt-6.1-sol
+    max_tokens: 1024
+    token_limit_field: max_completion_tokens
+    supports_multi_image: true
+    extra_body:
+      reasoning_effort: low
+
+  aggregator:
+    name: OpenAI-compatible aggregator example
+    provider: openrouter
+    base_url: https://openrouter.ai/api/v1
+    model: openai/gpt-4.1
+    api_key_env: OPENROUTER_API_KEY
+    # Set false to send one labeled horizontal montage instead of many images.
+    supports_multi_image: true
+
+  qwen_vl:
+    name: Alibaba Qwen3-VL Plus
+    provider: alibaba-model-studio
+    # Official docs confirm the legacy Beijing endpoint still works.
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    # Preferred current endpoint (substitute your real workspace ID):
+    # https://WORKSPACE_ID.cn-beijing.maas.aliyuncs.com/compatible-mode/v1
+    model: qwen3-vl-plus
+    api_key_env: DASHSCOPE_API_KEY
+    extra_body:
+      enable_thinking: false
+
+  local_vllm:
+    name: Local vLLM vision model
+    provider: vllm
+    base_url: http://localhost:8000/v1
+    # Must match the model/served-model-name used by your own vLLM server.
+    model: local-vision-model
+    api_key_env: VLLM_API_KEY
+    requires_api_key: false
+    supports_multi_image: true

@@ -1,0 +1,84 @@
+{
+  "models": [
+    "gpt",
+    "claude"
+  ],
+  "runs": {
+    "gpt": {
+      "model": "gpt",
+      "provider": "nexfaro",
+      "condition": "image",
+      "dry_run": false,
+      "dataset_fingerprint": "226e0b89da1083fecb5b6e2575e9b447a136e39b1753c6e4e108b4f6b0d8385f",
+      "config_fingerprint": "6989f9f73ce973767e0834fe014be90cbdd50abbbecd2c99d05544f0772ab772",
+      "bootstrap_replicates": 2000,
+      "seed": 20261021,
+      "bins": 5,
+      "ci_method": "percentile 95%; resample whole base_structure clusters",
+      "identical_duplicates_removed": 0,
+      "visibility_observations_before": 1440,
+      "visibility_observations_after": 1170,
+      "visibility_scored_before": 1440,
+      "visibility_scored_after": 1170,
+      "k8_removed_duplicates": 270,
+      "dedup_policy": "For k < 8, retain one observation per (base_question_id, k, strategy), including strategies selecting the same views. For k = 8, validate the shared response and retain one observation per base_question_id. Accuracy excludes skipped records; errors and invalid responses count as wrong.",
+      "interpretation": "Descriptive association between visibility and accuracy, not a causal estimate.",
+      "missing_curve_cells": 0,
+      "questions_by_task": {
+        "Q1a": 30,
+        "Q2hard": 30,
+        "Q3": 30
+      },
+      "base_questions": 90,
+      "expected_per_type": 30
+    },
+    "claude": {
+      "model": "claude",
+      "provider": "heju",
+      "condition": "image",
+      "dry_run": false,
+      "dataset_fingerprint": "226e0b89da1083fecb5b6e2575e9b447a136e39b1753c6e4e108b4f6b0d8385f",
+      "config_fingerprint": "b8dbfbbabc7e2336a1c947d76bdce06b8317244d5e37c6dec92b0a4d5a851f15",
+      "bootstrap_replicates": 2000,
+      "seed": 20261021,
+      "bins": 5,
+      "ci_method": "percentile 95%; resample whole base_structure clusters",
+      "identical_duplicates_removed": 0,
+      "visibility_observations_before": 1440,
+      "visibility_observations_after": 1170,
+      "visibility_scored_before": 1440,
+      "visibility_scored_after": 1170,
+      "k8_removed_duplicates": 270,
+      "dedup_policy": "For k < 8, retain one observation per (base_question_id, k, strategy), including strategies selecting the same views. For k = 8, validate the shared response and retain one observation per base_question_id. Accuracy excludes skipped records; errors and invalid responses count as wrong.",
+      "interpretation": "Descriptive association between visibility and accuracy, not a causal estimate.",
+      "missing_curve_cells": 0,
+      "questions_by_task": {
+        "Q1a": 30,
+        "Q2hard": 30,
+        "Q3": 30
+      },
+      "base_questions": 90,
+      "expected_per_type": 30
+    }
+  },
+  "excluded_runs": [],
+  "dry_run": false,
+  "bootstrap_replicates": 2000,
+  "seed": 20261021,
+  "bins": 5,
+  "ci_method": "percentile 95%; resample whole base_structure clusters",
+  "dedup_policy": "For k < 8, retain one observation per (base_question_id, k, strategy), including strategies selecting the same views. For k = 8, validate the shared response and retain one observation per base_question_id. Accuracy excludes skipped records; errors and invalid responses count as wrong.",
+  "shared_base_questions_across_models": 90,
+  "cohort_policy": "Each model uses its complete, task-balanced cohort; model quotas may differ. Shared questions use identical views.",
+  "summary_accuracy": "Question-weighted accuracy pooling Q1a, Q2 hard and Q3; resample base_structure clusters across all three tasks together.",
+  "summary_k8_policy": "Each strategy has one record per question; the common endpoint and confidence interval are drawn only once per model.",
+  "interpretation": "Descriptive results; differing model cohorts are reported with their sample sizes and are not paired model comparisons.",
+  "source_paths": {
+    "gpt": [
+      "D:\\Users\\meyou\\Desktop\\GitHub开源项目贡献\\mv-crystalbench\\results\\ablation_gpt.jsonl"
+    ],
+    "claude": [
+      "D:\\Users\\meyou\\Desktop\\GitHub开源项目贡献\\mv-crystalbench\\results\\ablation_claude.jsonl"
+    ]
+  }
+}

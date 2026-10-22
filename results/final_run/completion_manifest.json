@@ -1,0 +1,79 @@
+{
+  "generated_at_utc": "2026-10-22T09:00:31.098379+00:00",
+  "accepted_models": [
+    "gpt",
+    "claude"
+  ],
+  "excluded_models": {
+    "kimi": {
+      "smoke_passed": false,
+      "smoke": {
+        "records": 8,
+        "scored": 8,
+        "statuses": {
+          "ok": 5,
+          "error": 3
+        },
+        "correct": 5,
+        "response_models": {
+          "kimi-k3": 5,
+          "missing": 3
+        },
+        "invalid": 0,
+        "final_answer_lines": 5,
+        "prompt_tokens": 13340,
+        "completion_tokens": 30008,
+        "mean_latency": 187.73946583749785
+      },
+      "vision_controls": {
+        "records": 0,
+        "scored": 0,
+        "statuses": {},
+        "correct": 0,
+        "response_models": {},
+        "invalid": 0,
+        "final_answer_lines": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "mean_latency": null
+      },
+      "failure_reason": [
+        {
+          "type": "APIError",
+          "message": "HTTP 502: {\"error\":{\"message\":\"Upstream service temporarily unavailable\",\"type\":\"upstream_error\"}}",
+          "retryable": true,
+          "status_code": 502
+        },
+        {
+          "type": "APIError",
+          "message": "HTTP 502: {\"error\":{\"message\":\"Upstream service temporarily unavailable\",\"type\":\"upstream_error\"}}",
+          "retryable": true,
+          "status_code": 502
+        },
+        {
+          "type": "APIError",
+          "message": "HTTP 502: {\"error\":{\"message\":\"Upstream service temporarily unavailable\",\"type\":\"upstream_error\"}}",
+          "retryable": true,
+          "status_code": 502
+        }
+      ],
+      "requested_model": "kimi-k3",
+      "provider": "nexfaro"
+    }
+  },
+  "notes": [
+    "Fee enforcement was disabled at the user request; no cohort was reduced for cost.",
+    "GPT (Nexfaro, gpt-6.1-sol) and Claude (Heju, claude-sonnet-5-5) completed all three main conditions and 90 original ablation questions each (1440 combination records per model).",
+    "Kimi used Nexfaro /v1 with kimi-k3. Its final image smoke test returned 5 valid responses and 3 upstream HTTP 502 errors after retries. It was excluded under the pre-specified smoke-failure rule, so Kimi is N/A rather than zero accuracy. Failed smoke results are not part of the main tables.",
+    "All formal model configurations used a generation-token cap of 8192, concurrency 8 per model, a 300-second socket timeout, and at most one retry. Requested and returned model identifiers matched in all successful formal responses.",
+    "GPT no_image: 34/200 outputs did not provide a parseable choice (examples ask for the missing image); these remain in the denominator and count as wrong. Image and text main conditions had no invalid responses or API errors for either included model.",
+    "Claude ablation has one empty output with finish_reason=length; it is counted as incorrect. GPT ablation has no invalid responses or API errors.",
+    "Initial lower-token-limit diagnostics and earlier pilots were excluded from all formal accuracy tables and figures. The cost report retains all historical attempts, including diagnostics and failed attempts.",
+    "Interpretation: pooled eight-view accuracy exceeds one-random-view accuracy for both models. The pooled k=1 max-minus-min visibility confidence intervals contain zero, so the experiment does not establish a general advantage for max_visibility. Binned visibility plots show associations and do not establish causality."
+  ],
+  "question_manifest": "data/questions_mini.jsonl",
+  "question_manifest_sha256": "2ce9e318ba32e9b8b4f2c1352daed9bdaca3976dfee9a048ba93a5bfa3cfc138",
+  "main_tables": "results/main_tables.txt",
+  "findings": "results/key_findings.txt",
+  "cost_report": "results/cost_report.txt"
+}

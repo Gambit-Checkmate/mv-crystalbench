@@ -1,0 +1,40 @@
+{
+  "output": "D:\\Users\\meyou\\Desktop\\GitHub开源项目贡献\\mv-crystalbench\\results\\ablation_claude.jsonl",
+  "request_cache": "D:\\Users\\meyou\\Desktop\\GitHub开源项目贡献\\mv-crystalbench\\results\\.ablation_cache\\claude.requests.jsonl",
+  "condition": "image",
+  "model": "claude",
+  "dry_run": false,
+  "seed": 20261021,
+  "base_questions": 90,
+  "full_planned_base_questions": 90,
+  "by_task": {
+    "Q1a": 30,
+    "Q2hard": 30,
+    "Q3": 30
+  },
+  "unique_bases_by_task": {
+    "Q1a": 30,
+    "Q2hard": 30,
+    "Q3": 30
+  },
+  "variant_records": 1440,
+  "unique_evaluations": 927,
+  "reused_records": 513,
+  "statuses": {
+    "ok": 1439,
+    "invalid_response": 1
+  },
+  "strategies": [
+    "random",
+    "canonical",
+    "max_visibility",
+    "min_visibility"
+  ],
+  "view_counts": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "selector_version": "display-union-visible-greedy-v2-independent-random-k"
+}

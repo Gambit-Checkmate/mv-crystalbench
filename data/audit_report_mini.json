@@ -1,0 +1,164 @@
+{
+  "passed": true,
+  "checks": 306594,
+  "question_count": 200,
+  "questions_file": "questions_mini.jsonl",
+  "questions_sha256": "2ce9e318ba32e9b8b4f2c1352daed9bdaca3976dfee9a048ba93a5bfa3cfc138",
+  "scene_count": 419,
+  "view_count": 3488,
+  "qtype_counts": {
+    "Q1a": 25,
+    "Q1b": 25,
+    "Q2": 50,
+    "Q3": 25,
+    "Q4": 25,
+    "Q5": 25,
+    "Q6": 25
+  },
+  "unique_base_structures_by_qtype": {
+    "Q1a": 25,
+    "Q1b": 25,
+    "Q2": 35,
+    "Q3": 25,
+    "Q4": 25,
+    "Q5": 25,
+    "Q6": 25
+  },
+  "answer_text_distributions": {
+    "Q1a": {
+      "1": 1,
+      "10": 1,
+      "12": 2,
+      "13": 1,
+      "14": 2,
+      "15": 1,
+      "16": 1,
+      "18": 1,
+      "19": 1,
+      "2": 2,
+      "22": 1,
+      "31": 1,
+      "4": 2,
+      "45": 1,
+      "5": 1,
+      "6": 2,
+      "8": 2,
+      "9": 2
+    },
+    "Q1b": {
+      "1": 1,
+      "12": 2,
+      "16": 1,
+      "18": 1,
+      "2": 5,
+      "3": 1,
+      "32": 1,
+      "4": 7,
+      "6": 2,
+      "8": 4
+    },
+    "Q2": {
+      "12": 3,
+      "2": 10,
+      "3": 11,
+      "4": 11,
+      "6": 10,
+      "8": 5
+    },
+    "Q3": {
+      "B is closer": 12,
+      "C is closer": 13
+    },
+    "Q4": {
+      "cubic": 4,
+      "hexagonal": 5,
+      "monoclinic": 4,
+      "orthorhombic": 4,
+      "tetragonal": 4,
+      "trigonal": 4
+    },
+    "Q5": {
+      "Different atomic arrangement": 6,
+      "Different element identities": 3,
+      "Different lattice dimensions": 3,
+      "Same structure": 13
+    },
+    "Q6": {
+      "<100>": 3,
+      "<110>": 3,
+      "<111>": 3,
+      "<112>": 3,
+      "[001]": 4,
+      "[100]": 3,
+      "[110]": 3,
+      "[111]": 3
+    }
+  },
+  "answer_letters": {
+    "A": 54,
+    "B": 49,
+    "C": 45,
+    "D": 52
+  },
+  "answer_letters_by_type": {
+    "Q1a": {
+      "A": 7,
+      "B": 6,
+      "C": 6,
+      "D": 6
+    },
+    "Q1b": {
+      "A": 8,
+      "B": 6,
+      "C": 3,
+      "D": 8
+    },
+    "Q2": {
+      "A": 12,
+      "B": 13,
+      "C": 13,
+      "D": 12
+    },
+    "Q3": {
+      "A": 6,
+      "B": 6,
+      "C": 5,
+      "D": 8
+    },
+    "Q4": {
+      "A": 7,
+      "B": 4,
+      "C": 7,
+      "D": 7
+    },
+    "Q5": {
+      "A": 7,
+      "B": 8,
+      "C": 5,
+      "D": 5
+    },
+    "Q6": {
+      "A": 7,
+      "B": 6,
+      "C": 6,
+      "D": 6
+    }
+  },
+  "q3_depth_trap_ratio": 0.48,
+  "q5_sample_types": {
+    "delete_atom": 3,
+    "polymorph": 3,
+    "positive": 13,
+    "stretch_axis": 3,
+    "swap_elements": 3
+  },
+  "q2_hard_visibility": {
+    "question_count": 25,
+    "questions_with_neighbor_below_half_in_all_default_views": 0,
+    "neighbor_count": 110,
+    "neighbors_below_half_in_all_default_views": 0,
+    "affected_questions": []
+  },
+  "errors": [],
+  "warnings": []
+}

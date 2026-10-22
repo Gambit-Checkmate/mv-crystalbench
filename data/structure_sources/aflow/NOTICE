@@ -1,0 +1,20 @@
+AFLOW prototype encyclopedia data collection
+Copyright 2026 M.J. Mehl, H. Eckert, S. Curtarolo
+Licensed under Apache License 2.0; see LICENSE.
+Source: https://github.com/aflow-org/aflow_prototype_encyclopedia
+Pinned revision: fb7421bb2522888b6a0a4ff91e124c6c65191096
+
+MV-CrystalBench bundles an unmodified subset of upstream CIF, info.json and base.bib files.
+Structure constructors expand asymmetric sites using ASE crystal, then standardize
+the conventional cell with spglib at 1e-5 angstrom. The generated cell basis, origin
+and tiny symmetry idealization can differ from the published CIF representation.
+Bond-pair policies, Q2 eligibility decisions, source manifest and scientific tests
+are additions made for MV-CrystalBench; they are not AFLOW annotations.
+
+Original papers are cited in each prototype folder base.bib. Library references:
+Mehl et al., Computational Materials Science 136, S1-S828 (2017),
+doi:10.1016/j.commatsci.2017.01.017.
+Hicks et al., Computational Materials Science 199, 110450 (2021),
+doi:10.1016/j.commatsci.2021.110450.
+Eckert et al., Computational Materials Science 240, 112988 (2024),
+doi:10.1016/j.commatsci.2024.112988.

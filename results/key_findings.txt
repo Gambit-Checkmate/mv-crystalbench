@@ -1,0 +1,92 @@
+MV-CrystalBench: key findings
+
+Expected main cohort: 200 questions; text-applicable paired cohort: 150.
+Intervals: percentile 95% cluster bootstrap over base_structure (2000 draws; seed=20261021).
+Recorded API errors and invalid outputs count as incorrect; skipped items are excluded.
+Missing results are reported and excluded, so partial coverage is not a full-cohort estimate.
+All real records are used regardless of success; dry runs never support substantive conclusions.
+Differences are left minus right in percentage points (pp); no significance claim is inferred from CI overlap.
+
+1. Image accuracy and paired image minus text
+gpt image: 89.0%; 95% CI [84.2, 93.2]%; correct=178/200; coverage=200/200; bases=48; errors=0, invalid=0, skipped=0
+gpt text: 99.3%; 95% CI [97.9, 100.0]%; correct=149/150; coverage=150/150; bases=48; errors=0, invalid=0, skipped=50
+gpt image - text, common text-applicable question IDs only: -12.0 pp; 95% CI [-18.1, -6.7] pp; left=87.3% (n=150), right=99.3% (n=150); bases=48; errors L/R=0/0, invalid L/R=0/0; paired coverage=150/150; available L/R=150/150; missing L/R=0/0
+claude image: 84.0%; 95% CI [77.6, 89.6]%; correct=168/200; coverage=200/200; bases=48; errors=0, invalid=0, skipped=0
+claude text: 98.7%; 95% CI [96.5, 100.0]%; correct=148/150; coverage=150/150; bases=48; errors=0, invalid=0, skipped=50
+claude image - text, common text-applicable question IDs only: -16.0 pp; 95% CI [-22.4, -10.4] pp; left=82.7% (n=150), right=98.7% (n=150); bases=48; errors L/R=0/0, invalid L/R=0/0; paired coverage=150/150; available L/R=150/150; missing L/R=0/0
+kimi image: N/A; CI unavailable (no applicable questions); correct=0/0; coverage=0/200; bases=0; errors=0, invalid=0, skipped=0
+kimi text: N/A; CI unavailable (no applicable questions); correct=0/0; coverage=0/150; bases=0; errors=0, invalid=0, skipped=0
+kimi image - text, common text-applicable question IDs only: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; paired coverage=0/150; available L/R=0/0; missing L/R=150/150
+
+2. No-image control versus the 25% random-choice reference
+gpt: 28.5%; 95% CI [22.7, 34.0]%; correct=57/200; coverage=200/200; bases=48; errors=0, invalid=34, skipped=0; minus 25%=+3.5 pp; 95% CI [-2.3, 9.0] pp
+claude: 35.5%; 95% CI [28.1, 42.7]%; correct=71/200; coverage=200/200; bases=48; errors=0, invalid=0, skipped=0; minus 25%=+10.5 pp; 95% CI [3.1, 17.7] pp
+kimi: N/A; CI unavailable (no applicable questions); correct=0/0; coverage=0/200; bases=0; errors=0, invalid=0, skipped=0; minus 25%=N/A; CI unavailable (no applicable questions)
+
+3. Q3 depth trap: true minus false, separately by input condition
+gpt/image: -0.6 pp; 95% CI [-23.1, 21.4] pp; left=91.7% (n=12), right=92.3% (n=13); bases=25; errors L/R=0/0, invalid L/R=0/0; coverage true=12/12, false=13/13
+gpt/text: +0.0 pp; 95% CI [0.0, 0.0] pp; left=100.0% (n=12), right=100.0% (n=13); bases=25; errors L/R=0/0, invalid L/R=0/0; coverage true=12/12, false=13/13
+gpt/no_image: +0.0 pp; 95% CI [0.0, 0.0] pp; left=0.0% (n=12), right=0.0% (n=13); bases=25; errors L/R=0/0, invalid L/R=0/0; coverage true=12/12, false=13/13
+claude/image: -8.3 pp; 95% CI [-27.3, 0.0] pp; left=91.7% (n=12), right=100.0% (n=13); bases=25; errors L/R=0/0, invalid L/R=0/0; coverage true=12/12, false=13/13
+claude/text: +0.0 pp; 95% CI [0.0, 0.0] pp; left=100.0% (n=12), right=100.0% (n=13); bases=25; errors L/R=0/0, invalid L/R=0/0; coverage true=12/12, false=13/13
+claude/no_image: +0.0 pp; 95% CI [0.0, 0.0] pp; left=0.0% (n=12), right=0.0% (n=13); bases=25; errors L/R=0/0, invalid L/R=0/0; coverage true=12/12, false=13/13
+kimi/image: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; coverage true=0/12, false=0/13
+kimi/text: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; coverage true=0/12, false=0/13
+kimi/no_image: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; coverage true=0/12, false=0/13
+
+4-5. Paired view ablations: k=1 max minus min; k=1 random minus shared k=8
+gpt/image/Q1a/k1_max_minus_min: +13.3 pp; 95% CI [3.3, 26.7] pp; left=100.0% (n=30), right=86.7% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+gpt/image/Q1a/k1_random_minus_k8: +0.0 pp; 95% CI [-10.0, 10.0] pp; left=96.7% (n=30), right=96.7% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+gpt/image/Q2_hard/k1_max_minus_min: -3.3 pp; 95% CI [-16.7, 10.1] pp; left=83.3% (n=30), right=86.7% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+gpt/image/Q2_hard/k1_random_minus_k8: -13.3 pp; 95% CI [-30.0, 3.3] pp; left=76.7% (n=30), right=90.0% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+gpt/image/Q3/k1_max_minus_min: +6.7 pp; 95% CI [-10.0, 26.7] pp; left=76.7% (n=30), right=70.0% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+gpt/image/Q3/k1_random_minus_k8: -20.0 pp; 95% CI [-36.7, 0.0] pp; left=73.3% (n=30), right=93.3% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+gpt/image/overall/k1_max_minus_min: +5.6 pp; 95% CI [-3.3, 14.8] pp; left=86.7% (n=90), right=81.1% (n=90); bases=45; errors L/R=0/0, invalid L/R=0/0; paired coverage=90/90; available L/R=90/90; missing L/R=0/0; observed base questions=90/90
+gpt/image/overall/k1_random_minus_k8: -11.1 pp; 95% CI [-20.2, -1.3] pp; left=82.2% (n=90), right=93.3% (n=90); bases=45; errors L/R=0/0, invalid L/R=0/0; paired coverage=90/90; available L/R=90/90; missing L/R=0/0; observed base questions=90/90
+claude/image/Q1a/k1_max_minus_min: +6.7 pp; 95% CI [0.0, 16.7] pp; left=100.0% (n=30), right=93.3% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+claude/image/Q1a/k1_random_minus_k8: +0.0 pp; 95% CI [0.0, 0.0] pp; left=100.0% (n=30), right=100.0% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+claude/image/Q2_hard/k1_max_minus_min: -6.7 pp; 95% CI [-16.7, 0.0] pp; left=90.0% (n=30), right=96.7% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+claude/image/Q2_hard/k1_random_minus_k8: -3.3 pp; 95% CI [-10.0, 0.0] pp; left=90.0% (n=30), right=93.3% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+claude/image/Q3/k1_max_minus_min: +13.3 pp; 95% CI [0.0, 30.0] pp; left=86.7% (n=30), right=73.3% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+claude/image/Q3/k1_random_minus_k8: -16.7 pp; 95% CI [-33.3, -3.3] pp; left=80.0% (n=30), right=96.7% (n=30); bases=30; errors L/R=0/0, invalid L/R=0/0; paired coverage=30/30; available L/R=30/30; missing L/R=0/0; observed base questions=30/30
+claude/image/overall/k1_max_minus_min: +4.4 pp; 95% CI [-2.6, 12.2] pp; left=92.2% (n=90), right=87.8% (n=90); bases=45; errors L/R=0/0, invalid L/R=0/0; paired coverage=90/90; available L/R=90/90; missing L/R=0/0; observed base questions=90/90
+claude/image/overall/k1_random_minus_k8: -6.7 pp; 95% CI [-13.1, -1.1] pp; left=90.0% (n=90), right=96.7% (n=90); bases=45; errors L/R=0/0, invalid L/R=0/0; paired coverage=90/90; available L/R=90/90; missing L/R=0/0; observed base questions=90/90
+kimi/image/Q1a/k1_max_minus_min: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; paired coverage=0/30; available L/R=0/0; missing L/R=30/30; observed base questions=0/30
+kimi/image/Q1a/k1_random_minus_k8: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; paired coverage=0/30; available L/R=0/0; missing L/R=30/30; observed base questions=0/30
+kimi/image/Q2_hard/k1_max_minus_min: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; paired coverage=0/30; available L/R=0/0; missing L/R=30/30; observed base questions=0/30
+kimi/image/Q2_hard/k1_random_minus_k8: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; paired coverage=0/30; available L/R=0/0; missing L/R=30/30; observed base questions=0/30
+kimi/image/Q3/k1_max_minus_min: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; paired coverage=0/30; available L/R=0/0; missing L/R=30/30; observed base questions=0/30
+kimi/image/Q3/k1_random_minus_k8: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; paired coverage=0/30; available L/R=0/0; missing L/R=30/30; observed base questions=0/30
+kimi/image/overall/k1_max_minus_min: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; paired coverage=0/90; available L/R=0/0; missing L/R=90/90; observed base questions=0/90
+kimi/image/overall/k1_random_minus_k8: N/A; CI unavailable (one or both comparison groups have no applicable results); left=N/A (n=0), right=N/A (n=0); bases=0; errors L/R=0/0, invalid L/R=0/0; paired coverage=0/90; available L/R=0/0; missing L/R=90/90; observed base questions=0/90
+
+6. Three lowest observed image task accuracies and base-structure accuracies per model
+These are descriptive rankings over available results; errors may dominate incomplete runs.
+A single base structure has only one cluster: a cluster-bootstrap CI is unavailable, not zero-width.
+gpt lowest task #1 Q5: 64.0%; 95% CI [44.0, 80.0]%; correct=16/25; coverage=25/25; bases=25; errors=0, invalid=0, skipped=0
+gpt lowest task #2 Q4: 76.0%; 95% CI [60.0, 92.0]%; correct=19/25; coverage=25/25; bases=25; errors=0, invalid=0, skipped=0
+gpt lowest task #3 Q6: 88.0%; 95% CI [76.0, 100.0]%; correct=22/25; coverage=25/25; bases=25; errors=0, invalid=0, skipped=0
+gpt lowest base_structure #1 WC_hexagonal: 33.3%; CI unavailable (fewer than two independent structures); correct=1/3; coverage=3/3; bases=1; errors=0, invalid=0, skipped=0
+gpt lowest base_structure #2 AlB2: 50.0%; CI unavailable (fewer than two independent structures); correct=2/4; coverage=4/4; bases=1; errors=0, invalid=0, skipped=0
+gpt lowest base_structure #3 As_A7: 50.0%; CI unavailable (fewer than two independent structures); correct=2/4; coverage=4/4; bases=1; errors=0, invalid=0, skipped=0
+claude lowest task #1 Q5: 32.0%; 95% CI [16.0, 52.0]%; correct=8/25; coverage=25/25; bases=25; errors=0, invalid=0, skipped=0
+claude lowest task #2 Q6: 76.0%; 95% CI [60.0, 92.0]%; correct=19/25; coverage=25/25; bases=25; errors=0, invalid=0, skipped=0
+claude lowest task #3 Q4: 84.0%; 95% CI [68.0, 96.0]%; correct=21/25; coverage=25/25; bases=25; errors=0, invalid=0, skipped=0
+claude lowest base_structure #1 ZrO2_baddeleyite: 0.0%; CI unavailable (fewer than two independent structures); correct=0/1; coverage=1/1; bases=1; errors=0, invalid=0, skipped=0
+claude lowest base_structure #2 CaCO3_aragonite: 20.0%; CI unavailable (fewer than two independent structures); correct=1/5; coverage=5/5; bases=1; errors=0, invalid=0, skipped=0
+claude lowest base_structure #3 U_alpha: 40.0%; CI unavailable (fewer than two independent structures); correct=2/5; coverage=5/5; bases=1; errors=0, invalid=0, skipped=0
+kimi lowest task: unavailable (no applicable image results).
+kimi lowest base_structure: unavailable (no applicable image results).
+
+Excluded dry-run observations: main=0; ablation=0.
+All reported comparisons are descriptive; no multiple-comparison adjustment is applied.
+
+Run provenance and exclusions
+- Fee enforcement was disabled at the user request; no cohort was reduced for cost.
+- GPT (Nexfaro, gpt-6.1-sol) and Claude (Heju, claude-sonnet-5-5) completed all three main conditions and 90 original ablation questions each (1440 combination records per model).
+- Kimi used Nexfaro /v1 with kimi-k3. Its final image smoke test returned 5 valid responses and 3 upstream HTTP 502 errors after retries. It was excluded under the pre-specified smoke-failure rule, so Kimi is N/A rather than zero accuracy. Failed smoke results are not part of the main tables.
+- All formal model configurations used a generation-token cap of 8192, concurrency 8 per model, a 300-second socket timeout, and at most one retry. Requested and returned model identifiers matched in all successful formal responses.
+- GPT no_image: 34/200 outputs did not provide a parseable choice (examples ask for the missing image); these remain in the denominator and count as wrong. Image and text main conditions had no invalid responses or API errors for either included model.
+- Claude ablation has one empty output with finish_reason=length; it is counted as incorrect. GPT ablation has no invalid responses or API errors.
+- Initial lower-token-limit diagnostics and earlier pilots were excluded from all formal accuracy tables and figures. The cost report retains all historical attempts, including diagnostics and failed attempts.
+- Interpretation: pooled eight-view accuracy exceeds one-random-view accuracy for both models. The pooled k=1 max-minus-min visibility confidence intervals contain zero, so the experiment does not establish a general advantage for max_visibility. Binned visibility plots show associations and do not establish causality.

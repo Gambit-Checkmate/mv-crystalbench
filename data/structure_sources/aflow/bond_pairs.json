@@ -1,0 +1,198 @@
+{
+  "CuO_tenorite": [
+    [
+      "Cu",
+      "O"
+    ]
+  ],
+  "ZrO2_baddeleyite": [
+    [
+      "Zr",
+      "O"
+    ]
+  ],
+  "Ga2O3_beta": [
+    [
+      "Ga",
+      "O"
+    ]
+  ],
+  "SiO2_coesite": [
+    [
+      "Si",
+      "O"
+    ]
+  ],
+  "As2S3_orpiment": [
+    [
+      "As",
+      "S"
+    ]
+  ],
+  "Ag2S_acanthite": [
+    [
+      "Ag",
+      "S"
+    ]
+  ],
+  "CuCl2_tolbachite": [
+    [
+      "Cu",
+      "Cl"
+    ]
+  ],
+  "NiTi_B19prime": [
+    [
+      "Ni",
+      "Ti"
+    ]
+  ],
+  "P_black": [
+    [
+      "P",
+      "P"
+    ]
+  ],
+  "U_alpha": [
+    [
+      "U",
+      "U"
+    ]
+  ],
+  "Fe3C_cementite": [
+    [
+      "Fe",
+      "C"
+    ]
+  ],
+  "CaCO3_aragonite": [
+    [
+      "C",
+      "O"
+    ],
+    [
+      "Ca",
+      "O"
+    ]
+  ],
+  "Mg2SiO4_forsterite": [
+    [
+      "Mg",
+      "O"
+    ],
+    [
+      "Si",
+      "O"
+    ]
+  ],
+  "FeS2_marcasite": [
+    [
+      "Fe",
+      "S"
+    ],
+    [
+      "S",
+      "S"
+    ]
+  ],
+  "SnS_alpha": [
+    [
+      "Sn",
+      "S"
+    ]
+  ],
+  "SiO2_alpha_quartz": [
+    [
+      "Si",
+      "O"
+    ]
+  ],
+  "CaCO3_calcite": [
+    [
+      "Ca",
+      "O"
+    ],
+    [
+      "C",
+      "O"
+    ]
+  ],
+  "LiNbO3_ferroelectric": [
+    [
+      "Li",
+      "O"
+    ],
+    [
+      "Nb",
+      "O"
+    ]
+  ],
+  "As_A7": [
+    [
+      "As",
+      "As"
+    ]
+  ],
+  "Se_trigonal": [
+    [
+      "Se",
+      "Se"
+    ]
+  ],
+  "PbO_litharge": [
+    [
+      "Pb",
+      "O"
+    ]
+  ],
+  "BaTiO3_tetragonal": [
+    [
+      "Ti",
+      "O"
+    ]
+  ],
+  "CuFeS2_chalcopyrite": [
+    [
+      "Cu",
+      "S"
+    ],
+    [
+      "Fe",
+      "S"
+    ]
+  ],
+  "WC_hexagonal": [
+    [
+      "W",
+      "C"
+    ]
+  ],
+  "MoS2_2H": [
+    [
+      "Mo",
+      "S"
+    ]
+  ],
+  "BN_hexagonal": [
+    [
+      "B",
+      "N"
+    ]
+  ],
+  "AlB2": [
+    [
+      "Al",
+      "B"
+    ],
+    [
+      "B",
+      "B"
+    ]
+  ],
+  "PbCl2_cotunnite": [
+    [
+      "Pb",
+      "Cl"
+    ]
+  ]
+}

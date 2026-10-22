@@ -1,0 +1,175 @@
+{
+  "commit": "fb7421bb2522888b6a0a4ff91e124c6c65191096",
+  "selected": {
+    "CuO_tenorite": "AB_mC8_15_a_e-001",
+    "ZrO2_baddeleyite": "A2B_mP12_14_2e_e-001",
+    "Ga2O3_beta": "A2B3_mC20_12_2i_3i-001",
+    "SiO2_coesite": "A2B_mC48_15_ae3f_2f-001",
+    "As2S3_orpiment": "A2B3_mP20_14_2e_3e-002",
+    "Ag2S_acanthite": "A2B_mP12_14_2e_e-011",
+    "CuCl2_tolbachite": "A2B_mC6_12_i_a-001",
+    "NiTi_B19prime": "AB_mP4_11_e_e-001",
+    "PbCl2_cotunnite": "A2B_oP12_62_2c_c-003",
+    "P_black": "A_oC8_64_f-002",
+    "U_alpha": "A_oC4_63_c-001",
+    "Fe3C_cementite": "AB3_oP16_62_c_cd-001",
+    "CaCO3_aragonite": "ABC3_oP20_62_c_c_cd-003",
+    "Mg2SiO4_forsterite": "A2B4C_oP28_62_ac_2cd_c-001",
+    "FeS2_marcasite": "AB2_oP6_58_a_g-003",
+    "SnS_alpha": "AB_oP8_62_c_c-004",
+    "SiO2_alpha_quartz": "A2B_hP9_152_c_a-001",
+    "CaCO3_calcite": "ABC3_hR10_167_a_b_e-002",
+    "LiNbO3_ferroelectric": "ABC3_hR10_161_a_a_b-001",
+    "As_A7": "A_hR2_166_c-001",
+    "Se_trigonal": "A_hP3_152_a-001",
+    "PbO_litharge": "AB_tP4_129_a_c-001",
+    "BaTiO3_tetragonal": "AB3C_tP5_99_b_ac_a-001",
+    "CuFeS2_chalcopyrite": "ABC2_tI16_122_a_b_d-001",
+    "WC_hexagonal": "AB_hP2_187_a_d-001",
+    "MoS2_2H": "AB2_hP6_194_c_f-001",
+    "BN_hexagonal": "AB_hP4_194_c_d-001",
+    "AlB2": "AB2_hP3_191_a_d-001"
+  },
+  "source_sha256": {
+    "AB_mC8_15_a_e-001": {
+      "aflow.cif": "1e049233a6473831b5163049cc6ce427d153e77db059da00629e0c17c3f56f4e",
+      "info.json": "550db4bd788e323f6ae980b657492b04c36eb774104b380497dfbc01b5ec6242",
+      "base.bib": "ea40d3121fff05d6c76353de77aec4da6656d4ba507f38d0b92a6d8feda3eb77"
+    },
+    "A2B_mP12_14_2e_e-001": {
+      "aflow.cif": "aa5c785ab1b0a4c32317cea19cdac648e14b3ca9cb3b5707c2bdfc673244aefe",
+      "info.json": "6240a9183d093ba825409b9c50c314d99edf0349674f663893bdc9103d82fd7c",
+      "base.bib": "90049f56fd9d746513b57bceba8daded463f1dfe3dd3997255870c67eee61457"
+    },
+    "A2B3_mC20_12_2i_3i-001": {
+      "aflow.cif": "b86eb5cf857c37002d316557afcb2e213b86dc9136798c2fcf5a00b37a33291a",
+      "info.json": "eaf8f02fca650ec0b29d595a1accd9822426b22d2fa28e227575366731dea60d",
+      "base.bib": "331d3a7480e71f2c3bd6cca07c903d6f7bbb89690a7eabefcacdcad9f67a2f41"
+    },
+    "A2B_mC48_15_ae3f_2f-001": {
+      "aflow.cif": "b0979b0e83a7fbfa46d8c8dbc9a7c1d0efea0075c10f835891bb437c4ef27968",
+      "info.json": "5e322d1bb67878e357dc8fe71b483f6006bdef92d2aa763438fad9b678c4c1a2",
+      "base.bib": "5c9f26b44dfacd95e3ab3a148b83406da58eb9cd8272a416c70164dd4cd59870"
+    },
+    "A2B3_mP20_14_2e_3e-002": {
+      "aflow.cif": "789e2da867d219e02c188a5d28b41716bbcb2ccd7d088ead576b4d96f5673e87",
+      "info.json": "0d401f60686466f55d301336017bf6ddb06afb76bf4b8e77523a2117410a957f",
+      "base.bib": "718d94abfb711a6f7928b3381b26f890ded9113008cfc5d941fdfa23eaae099c"
+    },
+    "A2B_mP12_14_2e_e-011": {
+      "aflow.cif": "d73800c88e313dddcbca3fe9d3d809af5b0a293dc2553785387de645b3e9e1b4",
+      "info.json": "be8c955758ceb38916d76c458a5d6125ef0bb9fc44cdb0427c1a98a128546cea",
+      "base.bib": "6fde3ac5815eedf6a1df7c3da201468169f37896eaba82fdedbcbce30ccba6db"
+    },
+    "A2B_mC6_12_i_a-001": {
+      "aflow.cif": "d35143c790cc6c3e3e5ad53f8ee23105889f53e102786a818a4c2ec5df9d8675",
+      "info.json": "fea7afb2d166673adac3bbf03fdb7b4b210c44a261ed524b2a1acc1dccf959dd",
+      "base.bib": "4c58c81e456ec762b3e76b22b5fb00b0a28b2a22ac37af2c56c6e66993a05a9c"
+    },
+    "AB_mP4_11_e_e-001": {
+      "aflow.cif": "632f10272189ce0ce85b856ebd8d4901ce38f39e91b757f95705465893d530a7",
+      "info.json": "dd57b75a9a663025a4cc2b8a6ed58aeb15ddc760404234d9bbe98af827d900d5",
+      "base.bib": "a579206d68a2a433894b3ff1eb941db6153dafbf8df77761b5298c6d415f748b"
+    },
+    "A2B_oP12_62_2c_c-003": {
+      "aflow.cif": "fd9201a5d8b54e33a4b5f5ea9592eb36e427e307c89596287e6c4785546ed538",
+      "info.json": "68c72559e8a5681a970eccde756ec14941155bd46dbb49fbc82e54957ee0ed42",
+      "base.bib": "6f5fd697859208bfc2a983513d7b4645c43f75e9f93a3a3c4fe02fe27a31ee23"
+    },
+    "A_oC8_64_f-002": {
+      "aflow.cif": "32ea91504d34c3997c2cbdb11a37caf52047e65ba9f7b1709a589a621940f530",
+      "info.json": "46abdc78ed7daec7ff8efebde9a8d6429a879ed0816a4d7ec4abecd50f724aa1",
+      "base.bib": "f630f8087ad9bb0c22b5a973a7da8abc5a454cae5f85a01ae6def29a4c456760"
+    },
+    "A_oC4_63_c-001": {
+      "aflow.cif": "023ce1590018365b65e4e22009691dbe7da33244c0442ca97fcc3aa5eac43df9",
+      "info.json": "c138c4a58cba02a8760ad095e67ca3da9f0d597dfedc161d6348a979036498ed",
+      "base.bib": "4a387f0463a9667eff249722fb5d0b568f6e5c9e4bb575a790063b4887119e14"
+    },
+    "AB3_oP16_62_c_cd-001": {
+      "aflow.cif": "89a04731c6b8d5e32d002bb7f9eab663740e6e0c33812e92bb735d6baeb5a36a",
+      "info.json": "f81d96a2cd8c95810ed070d2f37b550e65fb1cb5f509b026b32e61b6a386f7ac",
+      "base.bib": "080d4b3f82da2a7be2f9f5d94a7565bce12e2cd04f270d2f7ec79ccd369312ab"
+    },
+    "ABC3_oP20_62_c_c_cd-003": {
+      "aflow.cif": "581b66c21136f6738a792a9f8279b0126d278a6a796cc59b6c2aead25d6f0ec9",
+      "info.json": "0e9c9157570f25f4cdd855520822f9292cd7a8092ba445d1cfec926e25e5dae9",
+      "base.bib": "0435e379aa7ee4e051a2ee3f2e44cbf8ee933b1acd1c9fdcb0338d74e92eb2e4"
+    },
+    "A2B4C_oP28_62_ac_2cd_c-001": {
+      "aflow.cif": "37316f91a33f8af444f861c0336341ea7a6990c5df9ac48e2f305dd8e1579b62",
+      "info.json": "dcbd2378739f4a8326fe9758a8b9f33cef66f9bbc27c8ea456b781d8dba2ce9f",
+      "base.bib": "bf7ba6fb200ce41561abe50d496256b48a59537e8d78039dcd1836e38e1eb486"
+    },
+    "AB2_oP6_58_a_g-003": {
+      "aflow.cif": "67d45d1d6fa9b7cb8ba359bcfb22090794865c01c12142268de8bf3540c8621f",
+      "info.json": "f3362be2e4329e571a38c703ca5d9d2d049795879449eb493fe459ee47fddec7",
+      "base.bib": "fa3c71660d1b64ec733c7541e1f2aef854c41e0060c4d95e71ff241bd69dd420"
+    },
+    "AB_oP8_62_c_c-004": {
+      "aflow.cif": "22ed76dc49006ce25ea47979eea8eed5b1ef312819a5a5c7628087b0689138c2",
+      "info.json": "e415e7c068207c9fc39f80c4a559ee1121b0f8aa483c1d0e596092fd4e5e264a",
+      "base.bib": "293e767951c5f4ff0cf249372bfd22fb93a89fa252805ee251681c8f38fd3648"
+    },
+    "A2B_hP9_152_c_a-001": {
+      "aflow.cif": "829fc0cdda5fe7f33914ec716a0d59c2b9dfd21bb64fa417bf8da19c25d86727",
+      "info.json": "bb3a87c3834bc0917b1973f027ef9a5817d2bd5a8ddee8a3ddf293a2551df4bd",
+      "base.bib": "fcf2bf8fccd558ef1b54bf46ddf4242722d1cc90e1113873dbae30eb9a33cc58"
+    },
+    "ABC3_hR10_167_a_b_e-002": {
+      "aflow.cif": "be8f223514e97c72cde7a377c4463efc96980e2b93b9022711864233cee071d8",
+      "info.json": "72b009ace25eb7e1c9df5abba3398a76dc1790511a5dd960fac2602bcb06106f",
+      "base.bib": "3c37f2a33e455159bc5f6211bae8d494954ef0c762812e18993c1dccfdd95e75"
+    },
+    "ABC3_hR10_161_a_a_b-001": {
+      "aflow.cif": "d4a1b6d4750096dcefb7ab5e7c9171619b03900f64cdf9aa1b40d545a1ffc1f6",
+      "info.json": "403bde36e4b1e972bb5f5aae0abaf3feebea07a1585d382b0eaf1ce62ab86ec4",
+      "base.bib": "ddc5f856a3827fe8281da3038f155bc01f23c421bf06052501a92e15b3d0febf"
+    },
+    "A_hR2_166_c-001": {
+      "aflow.cif": "a10a6c670665940daeccaa625ba189efb1214eda1d793ab38203a2ce653b1a79",
+      "info.json": "b1489ca448c2e5d29a7113d7b6dc1d56d21d34ae6e0be7e3b51bc01cc3a5cd11",
+      "base.bib": "f4404a2e8a34aa7391a927c8742dce67430df4776245b97b832565d79751c752"
+    },
+    "A_hP3_152_a-001": {
+      "aflow.cif": "82da613fc43f1b685168f03f0d32711994ae33d2211a45fc30be9b74784181c8",
+      "info.json": "6b7b5b1d4e8c32f984432139e55bfa3659a24e401df3fb72233e3817152f9914",
+      "base.bib": "b8d107996d740924c79ddd5134524a4f834b1626d01c7ad3e0b9f83ba01e5cd1"
+    },
+    "AB_tP4_129_a_c-001": {
+      "aflow.cif": "98eaac4936bd5e7039941e6be7699524ffe1eb5b0fa1a5b1157dd4a79e486014",
+      "info.json": "65de7849f0c0096c873f75d39435263027b1623c40c1b342339dcab6280c5f84",
+      "base.bib": "2a05823a061fe0c48f5fbf75a0c75585cff0e6c493c438a3862e2d03ca54f123"
+    },
+    "AB3C_tP5_99_b_ac_a-001": {
+      "aflow.cif": "4ff268ab674209ca2880a9c1f958e4397e9cd83eadf1bba5f3abd9bbabf97567",
+      "info.json": "4ef5175fddf23ad7e579f8e44c613df9730f03a90185a6df2db1c72a9b3113b2",
+      "base.bib": "78f83bfe127cdc78fb7561676e47733037fffca09caf8c522d0dc35d96279ad4"
+    },
+    "ABC2_tI16_122_a_b_d-001": {
+      "aflow.cif": "6c3f0f53c7ec8af55a4982bffa38f41770c9a6588a535314fcb6fae6480bbdda",
+      "info.json": "2341826bf7cf89938f619f941923ba36380c0fd325457fde7da3041b422db64e",
+      "base.bib": "5e34ddcc80cd96b190ce7516543f1fb5f6a52427e26e1e50cd20931575a61665"
+    },
+    "AB_hP2_187_a_d-001": {
+      "aflow.cif": "7158652a92af916a81a59ec9e13b42da3c0979e786fa3161ac1df21a8a83d416",
+      "info.json": "e28e425c85c7ad4161175d948fc14f2ce333ff89c38d7da2bd35d849c9525b4e",
+      "base.bib": "52f9da7e759243462d47e439256f3321bcfc6723d36516dd6f576891a14ea93b"
+    },
+    "AB2_hP6_194_c_f-001": {
+      "aflow.cif": "d798f438b266b734d99bf7a32513c71a9bf4eba3fd802eb21975d757ae067a97",
+      "info.json": "d0d2b22357cdca45864c0287ceaaf687120cec1ccc5bcd652bb4016b0e667ba5",
+      "base.bib": "43851478bcf1a0b4bd4fa7dcb546e6df9df13efdb507f5bebe936c4ca624328e"
+    },
+    "AB_hP4_194_c_d-001": {
+      "aflow.cif": "0a63306b6820b2a7ef44479f82e63bc2182db7748d4862c5fa3cb3b754356c34",
+      "info.json": "dcb7a5c1eb420356270b2554663099452bece8f8bda14156d233ccf4dc16f2bf",
+      "base.bib": "803d7cd9d34141f2c947df74ae0c7786a4c5b3157642bcf10c4b0c667e4bc52c"
+    },
+    "AB2_hP3_191_a_d-001": {
+      "aflow.cif": "9b16927977ad6b3ec86919fc60bff9f5e5b5c767d97e850b4e499d836293267f",
+      "info.json": "3630c5f39beef9a78ccbd20f9e85ede35f37e4a53f5df1b5470b28fb073988c2",
+      "base.bib": "a5f05d724cce772fc5a02b1326462d21cad309f2ab4b4d13f8e8943b1480a0ee"
+    }
+  }
+}

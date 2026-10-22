@@ -1,0 +1,8 @@
+* text=auto eol=lf
+# Preserve the byte identity of frozen scientific and release files on Windows.
+data/** -text
+results/** -text
+figures/** -text
+hf_dataset/** -text
+LICENSE-DATA -text
+*.png binary
